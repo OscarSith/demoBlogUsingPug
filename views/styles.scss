@@ -1,0 +1,606 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+
+// Colores
+$black: #000;
+$semiBlack: #262834;
+$greyLight: #a7a7a7;
+$white: #fff;
+$linkBlue: #337ab7;
+$blue: #495aff;
+$bg: #ededed;
+$turquesa: #0acffe;
+
+@mixin backgroundGradient($to: #0ccbfe, $button: #485cff) {
+	background: $to;
+	background: -moz-linear-gradient(top, $to 0%, $button 100%);
+	background: -webkit-linear-gradient(top, $to 0%,$button 100%);
+	background: linear-gradient(to bottom, $to 0%,$button 100%);
+}
+
+@font-face {
+	font-family: 'montserratlight';
+	src: url('../fonts/montserrat-light-webfont.otf')  format('opentype'),
+		url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+		url('../fonts/montserrat-light-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'montserratregular';
+	src: url('../fonts/montserrat-regular-webfont.otf') format('opentype'),
+		url('../fonts/montserrat-regular-webfont.woff') format('woff2'),
+		url('../fonts/montserrat-regular-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'montserratsemi_bold';
+	src: url('../fonts/montserrat-semibold-webfont.otf') format('opentype'),
+		url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+		url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'montserratextra_bold';
+	src: url('../fonts/montserrat-extrabold-webfont.otf') format('opentype'),
+		url('../fonts/montserrat-extrabold-webfont.woff2') format('woff2'),
+		url('../fonts/montserrat-extrabold-webfont.woff') format('woff');
+}
+
+body {
+	padding-top: 50px;
+	background-color: $bg;
+	font-family: montserratregular, Arial, Helvetica;
+}
+
+.full-overload {
+	position: fixed;
+	z-index: 9999;
+	top: 60px;
+	@include backgroundGradient($black, #485cff);
+	width: 100%;
+	height: 100%;
+
+	nav {
+		margin-top: 10em;
+
+		>ul {
+			font-size: 2.3em;
+			font-weight: bold;
+
+			>li {
+				text-align: center;
+				margin-bottom: 8px;
+			}
+			.nav-redes {
+				margin-bottom: 0;
+				margin-top: 40px;
+			}
+		}
+
+		a {
+			color: $white;
+
+			&:hover {
+				text-decoration: none;
+				color: #0acefe;
+			}
+		}
+	}
+}
+
+header {
+
+	nav {
+		background-color: $black;
+
+		button.navbar-toggle {
+			padding: 5px;
+			display: block !important;
+
+			.glyphicon {
+				font-size: 2.9em;
+				color: $white;
+			}
+		}
+	}
+
+	a.logo-isil {
+		margin-top: 9px;
+		display: inline-block;
+		margin-bottom: 6px;
+	}
+
+	nav {
+		font-size: .7em;
+
+		.nav > li > a {
+			color: $white;
+			font-weight: bold;
+
+			&:hover {
+				background-color: transparent;
+				color: $linkBlue;
+			}
+		}
+	}
+
+	.big-banner {
+		background: url('../img/bg-cabecera.jpg') no-repeat 50% 50%;
+		overflow: hidden;
+		color: $white;
+
+		&__title {
+			margin-top: 12em;
+		}
+		&__desc {
+			width: 56%;
+			margin: 0 auto 6em;
+			font-family: montserratextra_bold;
+			line-height: 1.2;
+		}
+	}
+}
+
+.body-content {
+	margin-top: -100px;
+
+	.list-proyects-toolbar {
+		margin-bottom: 10px;
+
+		.arrows button + button {
+			margin-left: 8px;
+		}
+
+		strong.pull-left {
+			color: $white;
+			margin: 6px 12px 0;
+		}
+
+		button {
+			background-color: transparent;
+			border: 1px solid #fff;
+			color: #fff;
+			padding: 5px 10px;
+
+			&:hover {
+				background-color: $white;
+				color: $semiBlack;
+			}
+		}
+		.pull-right a {
+			color: $white;
+		}
+	}
+
+	.thumbnail {
+		border: none;
+		border-radius: 0;
+		background-color: $semiBlack;
+		padding: 0;
+
+		.box-detail:hover {
+			background-color: $turquesa;
+
+			a {
+				color: $white;
+			}
+		}
+		.caption {
+			color: $white;
+			padding: 20px;
+			min-height: 96px;
+
+			p {
+				margin-bottom: 0;
+
+				a:hover {
+					color: $white;
+				}
+			}
+		}
+
+		.branding-box {
+			border-top: 1px solid #414465;
+			padding: 20px;
+
+			a {
+				font-family: montserratsemi_bold;
+				color: $blue;
+			}
+		}
+
+		&.bg-white {
+			background-color: $white;
+
+			.caption {
+				color: #414465;
+			}
+
+			.branding-box {
+				border-top-color: #f2f2f2;
+			}
+		}
+	}
+
+	.table-block {
+		display: table;
+		width: 100%;
+		height: 386px;
+		margin-bottom: 20px;
+
+		&__content {
+			display: table-cell;
+			background: url('../img/bg-nota-abridora.jpg') no-repeat 50% 50%;
+			vertical-align: middle;
+			padding-left: 30px;
+			padding-right: 30px;
+			color: $white;
+
+			&.second {
+				background-image: url('../img/bg-nota-abridora-2.jpg');
+			}
+
+			p {
+				font-size: 1.8em;
+				letter-spacing: 1.5px;
+				font-family: montserratextra_bold;
+			}
+		}
+	}
+
+	.diary {
+		padding: 12px;
+		@include backgroundGradient();
+
+		&__content {
+			background-color: $bg;
+			padding: 14px 14px 40px;
+
+			.header {
+				strong {
+					font-size: 3.7em;
+					display: inline-block;
+					width: 53%;
+					line-height: 1.2;
+				}
+				span {
+					display: inline-block;
+					width: 46%;
+					font-size: 1.2em;
+				}
+			}
+			.img {
+				margin-bottom: 30px;
+
+				img {
+					height: 247px;
+				}
+			}
+			.list {
+				strong.day {
+					color: #ccc;
+					font-size: 2.8em;
+					line-height: .8;
+				}
+
+				.row {
+					margin-left: 0;
+					margin-right: 0;
+
+					&:not(:last-child) {
+						border-bottom: 1px solid #ccc;
+						margin-bottom: 25px;
+						padding-bottom: 20px;
+					}
+				}
+			}
+		}
+	}
+
+	.students {
+		margin-bottom: 30px;
+		margin-top: 10px;
+
+		> button.slick-arrow {
+			background-color: transparent;
+			border: 2px solid $semiBlack;
+			color: $semiBlack;
+			padding: 15px 20px;
+			font-size: 1.4em;
+			position: absolute;
+			top: 40%;
+			z-index: 10;
+
+			&:hover {
+				background-color: $white;
+				border-color: $white;
+			}
+		}
+
+		.slick-prev {
+			left: 0;
+		}
+
+		.slick-next {
+			right: 0;
+		}
+
+		.student-block {
+
+			&:hover .info-alumno {
+				background-color: rgba(61, 75, 218, 0.8);
+
+				.column {
+					display: table-cell;
+
+					h5 {
+						font: 1.8em montserratextra_bold;
+					}
+
+					p {
+						font-family: montserratlight;
+					}
+				}
+			}
+		}
+
+		.info-alumno {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			transition: background-color 0.7s ease;
+			-webkit-transition: background-color 0.7s ease;
+			-moz-transition: background-color 0.7s ease;
+			-o-transition: background-color 0.7s ease;
+			background: transparent;
+			color: $white;
+			padding: 20px;
+			height: 100%;
+
+			.content-table {
+				display: table;
+				height: inherit;
+
+				.column {
+					display: none;
+					vertical-align: bottom;
+				}
+			}
+		}
+	}
+}
+
+.redes li {
+	display: inline-block;
+	margin: 0 4px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+
+	a {
+		display: inline-block;
+		text-indent: -9999px;
+		vertical-align: top;
+		width: 20px;
+	}
+}
+
+.block-experience {
+	h2 {
+		font-size: 3em;
+		color: $turquesa;
+
+		span:first-child {
+			color: #495aff;
+		}
+	}
+}
+
+.content-btn-show-more {
+	margin-bottom: 25px;
+
+	.btn-show-more {
+		width: 370px;
+		padding: 18px 0;
+		color: $greyLight;
+		text-decoration: none;
+		background-color: $white;
+		display: inline-block;
+		cursor: pointer;
+
+		&:hover {
+			color: #495aff;
+			text-decoration: none;
+		}
+	}
+}
+
+.job-content {
+	@include backgroundGradient();
+	color: $white;
+	margin-top: 1.3em;
+
+	.job-info {
+		padding: 54px 0;
+
+		h3 {
+			font: 2em montserratextra_bold;
+			text-transform: uppercase;
+			margin-bottom: 0;
+		}
+
+		strong {
+			font-size: 1.3em;
+		}
+
+		p {
+			font: 1.2em montserratlight;
+			margin: .9em auto 0;
+			width: 65%;
+		}
+	}
+
+	.send-icon {
+		font-size: 4em;
+	}
+}
+
+a.facebook {
+	background: url('../img/redes.png') no-repeat 0 0;
+}
+
+a.twitter {
+    background: url('../img/redes.png') no-repeat -20px 0;
+}
+
+footer {
+	background-color: #f2f2f2;
+	padding: 38px 25px;
+
+	p {
+		font-family: montserratlight;
+	}
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.col-xs-15 {
+    width: 20%;
+    float: left;
+}
+a {
+	color: inherit;
+}
+
+@media (max-width: 767px) {
+	header .big-banner__desc {
+		width: 90%;
+		font-size: 2.4em;
+	}
+
+	.content-btn-show-more {
+		.btn-show-more {
+			width: 100%;
+		}
+	}
+
+	.block-experience h2 {
+		font-size: 2.3em;
+	}
+
+	.job-content .job-info p {
+		width: 100%;
+	}
+
+	.full-overload nav > ul {
+		font-size: 1.7em;
+	}
+}
+@media (max-width: 991px) {
+	.body-content {
+		.table-block {
+			&__content {
+				background-size: cover;
+			}
+		}
+	}
+}
+@media (max-width: 1260px) {
+	header .big-banner__desc {
+		width: 72%;
+		margin-bottom: 5em;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+	.list {
+		.col-sm-3 {
+			padding-left: 0
+		}
+	}
+
+	.students > button.slick-arrow {
+		padding: 10px 15px !important;
+		font-size: 1.25em !important;
+	}
+
+	.body-content {
+		.table-block {
+			height: 346px;
+
+			&__content {
+				background-size: cover;
+			}
+		}
+		.diary {
+			&__content {
+				.img {
+					margin-bottom: 15px;
+
+					img {
+						height: auto;
+					}
+				}
+
+				.list {
+					strong.day {
+						font-size: 2.4em;
+					}
+
+					.row {
+						&:not(:last-child) {
+							margin-bottom: 13px;
+							padding-bottom: 8px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px) {
+    .col-sm-15 {
+        width: 20%;
+        float: left;
+    }
+    header .big-banner__desc {
+    	font-size: 3em;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 20%;
+        float: left;
+    }
+    header .big-banner__desc {
+    	font-size: 3.5em;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 20%;
+        float: left;
+    }
+}
