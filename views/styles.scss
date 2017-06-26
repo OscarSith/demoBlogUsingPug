@@ -30,6 +30,12 @@ $turquesa: #0acffe;
 	background: linear-gradient(to bottom, $to 0%,$button 100%);
 }
 
+@mixin black_header() {
+	padding: 10px 15px;
+	color: $white;
+	background-color: $black;
+}
+
 @font-face {
 	font-family: 'montserratlight';
 	src: url('../fonts/montserrat-light-webfont.otf')  format('opentype'),
@@ -76,7 +82,7 @@ body {
 		margin-top: 10em;
 
 		>ul {
-			font-size: 2.3em;
+			font-size: 2em;
 			font-weight: bold;
 
 			>li {
@@ -261,48 +267,49 @@ header {
 	}
 
 	.diary {
-		padding: 12px;
+		padding: 6px;
 		@include backgroundGradient();
 
 		&__content {
 			background-color: $bg;
-			padding: 14px 14px 40px;
+			padding: 12px;
 
 			.header {
-				strong {
-					font-size: 3.7em;
-					display: inline-block;
-					width: 53%;
-					line-height: 1.2;
-				}
-				span {
-					display: inline-block;
-					width: 46%;
-					font-size: 1.2em;
+				h3 {
+					margin-top: 0;
+					font-family: montserratsemi_bold;
+					color: $turquesa;
 				}
 			}
 			.img {
-				margin-bottom: 30px;
-
-				img {
-					height: 247px;
-				}
+				height: 146px;
+				background: url('../img/flyersthumb_qjag_defaultPhoto.png') no-repeat 50% 50%;
+				margin-bottom: 10px;
 			}
 			.list {
-				strong.day {
-					color: #ccc;
-					font-size: 2.8em;
+				.day {
+					font-size: 2em;
 					line-height: .8;
+				}
+				.month {
+					display: block;
+					color: #505050;
+					font-family: montserratlight;
 				}
 
 				.row {
 					margin-left: 0;
 					margin-right: 0;
 
+					p {
+						color: #505050;
+						font-family: montserratlight;
+					}
+
 					&:not(:last-child) {
 						border-bottom: 1px solid #ccc;
-						margin-bottom: 25px;
-						padding-bottom: 20px;
+						margin-bottom: 10px;
+						padding-bottom: 5px;
 					}
 				}
 			}
@@ -379,6 +386,80 @@ header {
 					display: none;
 					vertical-align: bottom;
 				}
+			}
+		}
+	}
+
+	.zone {
+		&-header {
+			@include black_header();
+		}
+		&-sliders {
+			height: 349px;
+
+			.slick-list, .slick-track, .slick-slide {
+				height: inherit;
+			}
+
+			.slider-row {
+				background-size: cover;
+				color: $white;
+
+				.bg-fade {
+					height: inherit;
+					padding: 20px;
+					@include backgroundGradient(transparent, #333);
+				}
+
+				h5 {
+					padding-top: 16em;
+				}
+
+				p {
+					width: 80%;
+				}
+			}
+		}
+		.slick-arrow {
+			position: absolute;
+			top: 44%;
+			background-color: transparent;
+			border: 1px solid $white;
+			padding: 6px 10px;
+			color: $white;
+			z-index: 9;
+		}
+		.slick-prev {
+			left: 20px;
+		}
+		.slick-next {
+			right: 20px;
+		}
+	}
+
+	.most-viewed {
+		.header {
+			@include black_header();
+		}
+		.contents {
+			.file {
+				margin-top: 15px;
+				margin-bottom: 15px;
+				overflow: hidden;
+
+				&:not(:last-child) {
+					border-bottom: 1px solid #ccc;
+					padding-bottom: 15px;
+				}
+			}
+
+			img {
+				height: 90px;
+				width: 127px;
+				margin-right: 10px;
+			}
+			h6 {
+				margin-top: 0;
 			}
 		}
 	}
@@ -557,11 +638,7 @@ a {
 		.diary {
 			&__content {
 				.img {
-					margin-bottom: 15px;
-
-					img {
-						height: auto;
-					}
+					height: 104px
 				}
 
 				.list {
@@ -571,12 +648,19 @@ a {
 
 					.row {
 						&:not(:last-child) {
-							margin-bottom: 13px;
-							padding-bottom: 8px;
+							margin-bottom: 8px;
+							padding-bottom: 0px;
 						}
 					}
 				}
 			}
+		}
+	}
+	.body-content .zone-sliders {
+		height: 306px;
+
+		.slider-row h5 {
+			padding-top: 12em;
 		}
 	}
 }
@@ -599,8 +683,8 @@ a {
     }
 }
 @media (min-width: 1200px) {
-    .col-lg-15 {
-        width: 20%;
-        float: left;
-    }
+	.col-lg-15 {
+		width: 20%;
+		float: left;
+	}
 }

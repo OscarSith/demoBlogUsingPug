@@ -104,102 +104,109 @@ block content
 		.row
 			.col-sm-12
 				h3 NOVEDADES
-			.col-sm-12.col-md-6
+			.col-sm-12
 				.row
-					.col-sm-12.text-center
+					.col-sm-12.col-md-6.text-center
 						.table-block
 							.table-block__content
 								h6 INSPIRACION
 								p Cuando de pronto, empiezas a ver rosas por todos lados.
-				.row
-					.col-sm-6
+
+					.col-sm-6.col-md-3
+						.diary
+							.diary__content
+								.header
+									h3 AGENDA
+								.img
+								.list.small
+									.row
+										.col-sm-3.text-center
+											strong.day 22
+											div.month AGO
+										.col-sm-9
+											p Conferencia de Hense en ISIL San Isidro
+
+									.row
+										.col-sm-3.text-center
+											strong.day 18
+											div.month SET
+										.col-sm-9
+											p Taller Descubriendo la Acuarela
+
+									.row
+										.col-sm-3.text-center
+											strong.day 05
+											div.month OCT
+										.col-sm-9
+											p Expo César Caycho - Animal Humano
+					.col-sm-6.col-md-3
+						.visible-xs &nbsp;
 						.thumbnail.bg-white
-							img.img-responsive(src="img/notas/nota-1.jpg")
+							img.img-responsive(src="img/notas/nota-3.jpg")
 							.box-detail
 								.caption
 									p
-										a(href="#") Miguel Chipana opina sobre el rol de los diseñadores
+										a(href="#") VIDEO: Creación de una ilustración para la película Ghost in the Shell
 								.branding-box
-									a(href="#") DOCENTES DG
+									a(href="#") RECURSOS
 									ul.list-unstyled.pull-right.redes
 										li
 											a.facebook(href='#') facebook
 										li
 											a.twitter(href='#') twitter
 
-					.col-sm-6
-						.thumbnail.bg-white
-							img.img-responsive(src="img/notas/nota-2.jpg")
-							.box-detail
-								.caption
-									p
-										a(href="#") Expodeco 2017: El evento más innovador del diseño y la arquitectura
-								.branding-box
-									a(href="#") AGENDA
-									ul.list-unstyled.pull-right.redes
-										li
-											a.facebook(href='#') facebook
-										li
-											a.twitter(href='#') twitter
-
+		.row
 			.col-sm-6.col-md-3
-				.diary
-					.diary__content
-						.header
-							strong A-GEN-DA
-							span.text-right 2017
-						.img
-							img.img-responsive(src="img/flyersthumb_qjag_defaultPhoto.png")
-						.list
-							.row
-								.col-sm-3
-									strong.day 22
-								.col-sm-9
-									strong Julio
-									p Taller Descubriendo la acuarela
-
-							.row
-								.col-sm-3
-									strong.day 18
-								.col-sm-9
-									strong Agosto
-									p Asamblea 2017-2
-
-							.row
-								.col-sm-3
-									strong.day 05
-								.col-sm-9
-									strong Septiembre
-									p Asamblea 2017-3
-			.col-sm-6.col-md-3
-				.visible-xs &nbsp;
 				.thumbnail.bg-white
-					img.img-responsive(src="img/notas/nota-3.jpg")
+					img.img-responsive(src="img/notas/nota-1.jpg")
 					.box-detail
 						.caption
 							p
-								a(href="#") VIDEO: Creación de una ilustración para la película Ghost in the Shell
+								a(href="#") Miguel Chipana opina sobre el rol de los diseñadores
 						.branding-box
-							a(href="#") RECURSOS
+							a(href="#") DOCENTES DG
 							ul.list-unstyled.pull-right.redes
 								li
 									a.facebook(href='#') facebook
 								li
 									a.twitter(href='#') twitter
-
+			.col-sm-6.col-md-3
 				.thumbnail.bg-white
-					img.img-responsive(src="img/notas/nota-4.jpg")
+					img.img-responsive(src="img/notas/nota-2.jpg")
 					.box-detail
 						.caption
 							p
-								a(href="#") 10 creativos que publican cosas extraordinarias en Instagram
+								a(href="#") Expodeco 2017: El evento más innovador del diseño y la arquitectura
 						.branding-box
-							a(href="#") INSPIRACIÓN
+							a(href="#") AGENDA
 							ul.list-unstyled.pull-right.redes
 								li
 									a.facebook(href='#') facebook
 								li
 									a.twitter(href='#') twitter
+			.col-sm-12.col-md-6
+				.zone
+					.zone-header
+						span ZONA PLAY
+							i.glyphicon.glyphicon-play
+
+					.zone-sliders
+						.slider-row(style="background-image: url('img/notas/nota-1.jpg')")
+							.bg-fade
+								h5 INSPIRACION
+								p
+									| Shanti Sparrow. Asi se trabaja la élite del diseño [VIDEO]
+						.slider-row(style="background-image: url('img/notas/nota-2.jpg')")
+							.bg-fade
+								h5 RECURSOS
+								p
+									|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam!
+						.slider-row(style="background-image: url('img/notas/nota-3.jpg')")
+							.bg-fade
+								h5 OTROS
+								p
+									|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa.
+
 		.row
 			.col-md-10.col-md-offset-1
 				img.img-responsive.center-block(src="img/banner-middle.jpg")
@@ -309,19 +316,18 @@ block content
 								li
 									a.twitter(href='#') twitter
 			.col-sm-6.col-md-3
-				.thumbnail.bg-white
-					img.img-responsive(src="img/notas/nota-6.jpg")
-					.box-detail
-						.caption
-							p
-								a(href="#") Charla Informativa: ¡Vamos por la Licenciatura! Universidad Mayor de Chile
-						.branding-box
-							a(href="#") AGENDA
-							ul.list-unstyled.pull-right.redes
-								li
-									a.facebook(href='#') facebook
-								li
-									a.twitter(href='#') twitter
+				.most-viewed
+					.header
+						span LO MÁS VISTO
+
+					.contents
+						- for (var x = 0; x < 3; x++)
+							.file
+								img.img-responsive.pull-left(src="#")
+								h6 INPIRACION
+								p.small
+									| 7 Consejos para diseñar tu guia de estilos
+
 		.row
 			.col-sm-6.col-md-3
 				.thumbnail.bg-white

@@ -3194,7 +3194,7 @@ body {
   .full-overload nav {
     margin-top: 10em; }
     .full-overload nav > ul {
-      font-size: 2.3em;
+      font-size: 2em;
       font-weight: bold; }
       .full-overload nav > ul > li {
         text-align: center;
@@ -3310,38 +3310,39 @@ header .big-banner {
         letter-spacing: 1.5px;
         font-family: montserratextra_bold; }
   .body-content .diary {
-    padding: 12px;
+    padding: 6px;
     background: #0ccbfe;
     background: -moz-linear-gradient(top, #0ccbfe 0%, #485cff 100%);
     background: -webkit-linear-gradient(top, #0ccbfe 0%, #485cff 100%);
     background: linear-gradient(to bottom, #0ccbfe 0%, #485cff 100%); }
     .body-content .diary__content {
       background-color: #ededed;
-      padding: 14px 14px 40px; }
-      .body-content .diary__content .header strong {
-        font-size: 3.7em;
-        display: inline-block;
-        width: 53%;
-        line-height: 1.2; }
-      .body-content .diary__content .header span {
-        display: inline-block;
-        width: 46%;
-        font-size: 1.2em; }
+      padding: 12px; }
+      .body-content .diary__content .header h3 {
+        margin-top: 0;
+        font-family: montserratsemi_bold;
+        color: #0acffe; }
       .body-content .diary__content .img {
-        margin-bottom: 30px; }
-        .body-content .diary__content .img img {
-          height: 247px; }
-      .body-content .diary__content .list strong.day {
-        color: #ccc;
-        font-size: 2.8em;
+        height: 146px;
+        background: url("../img/flyersthumb_qjag_defaultPhoto.png") no-repeat 50% 50%;
+        margin-bottom: 10px; }
+      .body-content .diary__content .list .day {
+        font-size: 2em;
         line-height: .8; }
+      .body-content .diary__content .list .month {
+        display: block;
+        color: #505050;
+        font-family: montserratlight; }
       .body-content .diary__content .list .row {
         margin-left: 0;
         margin-right: 0; }
+        .body-content .diary__content .list .row p {
+          color: #505050;
+          font-family: montserratlight; }
         .body-content .diary__content .list .row:not(:last-child) {
           border-bottom: 1px solid #ccc;
-          margin-bottom: 25px;
-          padding-bottom: 20px; }
+          margin-bottom: 10px;
+          padding-bottom: 5px; }
   .body-content .students {
     margin-bottom: 30px;
     margin-top: 10px; }
@@ -3389,6 +3390,57 @@ header .big-banner {
         .body-content .students .info-alumno .content-table .column {
           display: none;
           vertical-align: bottom; }
+  .body-content .zone-header {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #000; }
+  .body-content .zone-sliders {
+    height: 349px; }
+    .body-content .zone-sliders .slick-list, .body-content .zone-sliders .slick-track, .body-content .zone-sliders .slick-slide {
+      height: inherit; }
+    .body-content .zone-sliders .slider-row {
+      background-size: cover;
+      color: #fff; }
+      .body-content .zone-sliders .slider-row .bg-fade {
+        height: inherit;
+        padding: 20px;
+        background: transparent;
+        background: -moz-linear-gradient(top, transparent 0%, #333 100%);
+        background: -webkit-linear-gradient(top, transparent 0%, #333 100%);
+        background: linear-gradient(to bottom, transparent 0%, #333 100%); }
+      .body-content .zone-sliders .slider-row h5 {
+        padding-top: 16em; }
+      .body-content .zone-sliders .slider-row p {
+        width: 80%; }
+  .body-content .zone .slick-arrow {
+    position: absolute;
+    top: 44%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 6px 10px;
+    color: #fff;
+    z-index: 9; }
+  .body-content .zone .slick-prev {
+    left: 20px; }
+  .body-content .zone .slick-next {
+    right: 20px; }
+  .body-content .most-viewed .header {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #000; }
+  .body-content .most-viewed .contents .file {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow: hidden; }
+    .body-content .most-viewed .contents .file:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 15px; }
+  .body-content .most-viewed .contents img {
+    height: 90px;
+    width: 127px;
+    margin-right: 10px; }
+  .body-content .most-viewed .contents h6 {
+    margin-top: 0; }
 
 .redes li {
   display: inline-block;
@@ -3503,14 +3555,16 @@ a {
     .body-content .table-block__content {
       background-size: cover; }
   .body-content .diary__content .img {
-    margin-bottom: 15px; }
-    .body-content .diary__content .img img {
-      height: auto; }
+    height: 104px; }
   .body-content .diary__content .list strong.day {
     font-size: 2.4em; }
   .body-content .diary__content .list .row:not(:last-child) {
-    margin-bottom: 13px;
-    padding-bottom: 8px; } }
+    margin-bottom: 8px;
+    padding-bottom: 0px; }
+  .body-content .zone-sliders {
+    height: 306px; }
+    .body-content .zone-sliders .slider-row h5 {
+      padding-top: 12em; } }
 
 @media (min-width: 768px) {
   .col-sm-15 {

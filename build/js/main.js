@@ -50,6 +50,12 @@ $('div.students').slick({
 	]
 });
 
+$('div.zone-sliders').slick({
+	slidesToShow: 1,
+	prevArrow: prevArrowButton,
+	nextArrow: nextArrowButton
+});
+
 $('button.navbar-toggle').on('click', function(e) {
 	var $icon = $(e.currentTarget).children();
 	$('div.full-overload').fadeToggle(400, function(ex) {
