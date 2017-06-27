@@ -42,12 +42,19 @@ html(lang="es")
 						.pull-right
 							button.navbar-toggle
 								i.glyphicon.glyphicon-menu-hamburger
-				.big-banner.text-center
-					h5.big-banner__title RECURSOS
-					h1.big-banner__desc
-						| BEHANCE COMO FUENTE DE RECURSOS GRATUITOS PARA DISEÑADORES
-			.body-content
-				block content
+				block banner
+
+			block content
+
+			.container-fluid.row
+				.row.job-content
+					.container
+						.col-sm-12.text-center.job-info
+							i.glyphicon.glyphicon-send.send-icon
+							h3 envía tus trabajos
+							strong ¿Te gustaría mostrarle tus trabajos al mundo?
+							p
+								| Envíanos un mail a contactodg@isil.pe con un enlace al trabajo que quieras compartir y pronto lo veras en el blog.
 			footer.text-center
 				img.blocl-center(src="img/logo-isil-negro.png" alt="Logo Isil Negro")
 				br

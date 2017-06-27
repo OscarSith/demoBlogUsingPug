@@ -1,399 +1,370 @@
 extends partials/layout.pug
 
+block banner
+	include partials/home-header
+
 block content
-	.container
-		.row.list-proyects-toolbar
-			.col-sm-12
-				.pull-left
-					.arrows.pull-left
-					strong.pull-left
-						| PROYECTOS
-				.pull-right
-					a(href="#") Lo mas visto
-					span &nbsp; &nbsp; &nbsp;
-					a(href="#") Reciente
+	.body-content.row
+		.container.main
+			.row.list-proyects-toolbar
+				.col-sm-12
+					.pull-left
+						.arrows.pull-left
+						strong.pull-left
+							| PROYECTOS
+					.pull-right
+						a(href="#") Lo mas visto
+						span &nbsp; &nbsp; &nbsp;
+						a(href="#") Reciente
 
-		.row.list-proyects
-			.col-sm-3
-				.thumbnail
-					a(href="#")
-						img.img-responsive(src="img/proyects/bg-proyecto-1.jpg")
-					.caption
-						p.text-center
-							a(href="#") Alumnos de Isil presentan campaña del Día de la madre para Renzo Costa
-					.branding-box
-						a(href="#") BRANDING
-						ul.list-unstyled.pull-right.redes
-							li
-								a.facebook(href='#') facebook
-							li
-								a.twitter(href='#') twitter
-			.col-sm-3
-				.thumbnail
-					a(href="#")
-						img.img-responsive(src="img/proyects/bg-proyecto-2.jpg")
-					.caption
-						p.text-center
-							a(href="#") Victor Arias nos muestra la campaña de Play-Doh que te hará pensar en colores
-					.branding-box
-						a(href="#") ILUSTRACIÓN
-						ul.list-unstyled.pull-right.redes
-							li
-								a.facebook(href='#') facebook
-							li
-								a.twitter(href='#') twitter
-			.col-sm-3
-				.thumbnail
-					a(href="#")
-						img.img-responsive(src="img/proyects/bg-proyecto-3.jpg")
-					.caption
-						p.text-center
-							a(href="#") Kathy Moreno nos muestra la nueva identidad de Russ & Daughters.
-					.branding-box
-						a(href="#") BRANDING
-						ul.list-unstyled.pull-right.redes
-							li
-								a.facebook(href='#') facebook
-							li
-								a.twitter(href='#') twitter
-			.col-sm-3
-				.thumbnail
-					a(href="#")
-						img.img-responsive(src="img/proyects/bg-proyecto-4.jpg")
-					.caption
-						p.text-center
-							a(href="#") Ana Juana, ex-alumna de Diseño nos presenta: Dibujando al otro lado.
-					.branding-box
-						a(href="#") EDITORIAL
-						ul.list-unstyled.pull-right.redes
-							li
-								a.facebook(href='#') facebook
-							li
-								a.twitter(href='#') twitter
-			.col-sm-3
-				.thumbnail
-					a(href="#")
-						img.img-responsive(src="img/proyects/bg-proyecto-2.jpg")
-					.caption
-						p.text-center
-							a(href="#") Victor Arias nos muestra la campaña de Play-Doh que te hará pensar en colores
-					.branding-box
-						a(href="#") INLUSTRACIÓN
-						ul.list-unstyled.pull-right.redes
-							li
-								a.facebook(href='#') facebook
-							li
-								a.twitter(href='#') twitter
-			.col-sm-3
-				.thumbnail
-					a(href="#")
-						img.img-responsive(src="img/proyects/bg-proyecto-1.jpg")
-					.caption
-						p.text-center
-							a(href="#") Alumnos de Isil presentan campaña del Día de la madre para Renzo Costa
-					.branding-box
-						a(href="#") BRANDING
-						ul.list-unstyled.pull-right.redes
-							li
-								a.facebook(href='#') facebook
-							li
-								a.twitter(href='#') twitter
-		.row
-			.col-sm-8.col-sm-offset-2.text-center.content-btn-show-more
-				a.btn-show-more.bg-light VER MÁS
-		.row
-			.col-sm-12
-				h3 NOVEDADES
-			.col-sm-12
-				.row
-					.col-sm-12.col-md-6.text-center
-						.table-block
-							.table-block__content
-								h6 INSPIRACION
-								p Cuando de pronto, empiezas a ver rosas por todos lados.
+			.row.list-proyects
+				.col-sm-3
+					.thumbnail
+						a(href="#")
+							img.img-responsive(src="img/proyects/bg-proyecto-1.jpg")
+						.caption
+							p.text-center
+								a(href="#") Alumnos de Isil presentan campaña del Día de la madre para Renzo Costa
+						.branding-box
+							a(href="#") BRANDING
+							ul.list-unstyled.pull-right.redes
+								li
+									a.facebook(href='#') facebook
+								li
+									a.twitter(href='#') twitter
+				.col-sm-3
+					.thumbnail
+						a(href="#")
+							img.img-responsive(src="img/proyects/bg-proyecto-2.jpg")
+						.caption
+							p.text-center
+								a(href="#") Victor Arias nos muestra la campaña de Play-Doh que te hará pensar en colores
+						.branding-box
+							a(href="#") ILUSTRACIÓN
+							ul.list-unstyled.pull-right.redes
+								li
+									a.facebook(href='#') facebook
+								li
+									a.twitter(href='#') twitter
+				.col-sm-3
+					.thumbnail
+						a(href="#")
+							img.img-responsive(src="img/proyects/bg-proyecto-3.jpg")
+						.caption
+							p.text-center
+								a(href="#") Kathy Moreno nos muestra la nueva identidad de Russ & Daughters.
+						.branding-box
+							a(href="#") BRANDING
+							ul.list-unstyled.pull-right.redes
+								li
+									a.facebook(href='#') facebook
+								li
+									a.twitter(href='#') twitter
+				.col-sm-3
+					.thumbnail
+						a(href="#")
+							img.img-responsive(src="img/proyects/bg-proyecto-4.jpg")
+						.caption
+							p.text-center
+								a(href="#") Ana Juana, ex-alumna de Diseño nos presenta: Dibujando al otro lado.
+						.branding-box
+							a(href="#") EDITORIAL
+							ul.list-unstyled.pull-right.redes
+								li
+									a.facebook(href='#') facebook
+								li
+									a.twitter(href='#') twitter
+				.col-sm-3
+					.thumbnail
+						a(href="#")
+							img.img-responsive(src="img/proyects/bg-proyecto-2.jpg")
+						.caption
+							p.text-center
+								a(href="#") Victor Arias nos muestra la campaña de Play-Doh que te hará pensar en colores
+						.branding-box
+							a(href="#") INLUSTRACIÓN
+							ul.list-unstyled.pull-right.redes
+								li
+									a.facebook(href='#') facebook
+								li
+									a.twitter(href='#') twitter
+				.col-sm-3
+					.thumbnail
+						a(href="#")
+							img.img-responsive(src="img/proyects/bg-proyecto-1.jpg")
+						.caption
+							p.text-center
+								a(href="#") Alumnos de Isil presentan campaña del Día de la madre para Renzo Costa
+						.branding-box
+							a(href="#") BRANDING
+							ul.list-unstyled.pull-right.redes
+								li
+									a.facebook(href='#') facebook
+								li
+									a.twitter(href='#') twitter
+			.row
+				.col-sm-8.col-sm-offset-2.text-center.content-btn-show-more
+					a.btn-show-more.bg-light VER MÁS
+			.row
+				.col-sm-12
+					h3 NOVEDADES
+				.col-sm-12
+					.row
+						.col-sm-12.col-md-6.text-center
+							.table-block
+								.table-block__content
+									h6 INSPIRACION
+									p Cuando de pronto, empiezas a ver rosas por todos lados.
 
-					.col-sm-6.col-md-3
-						.diary
-							.diary__content
-								.header
-									h3 AGENDA
-								.img
-								.list.small
-									.row
-										.col-sm-3.text-center
-											strong.day 22
-											div.month AGO
-										.col-sm-9
-											p Conferencia de Hense en ISIL San Isidro
+						.col-sm-6.col-md-3
+							include partials/agenda.pug
 
-									.row
-										.col-sm-3.text-center
-											strong.day 18
-											div.month SET
-										.col-sm-9
-											p Taller Descubriendo la Acuarela
+						.col-sm-6.col-md-3
+							.visible-xs &nbsp;
+							.thumbnail.bg-white
+								img.img-responsive(src="img/notas/nota-3.jpg")
+								.box-detail
+									.caption
+										p
+											a(href="interior.html") VIDEO: Creación de una ilustración para la película Ghost in the Shell
+									.branding-box
+										a(href="interior.html") RECURSOS
+										ul.list-unstyled.pull-right.redes
+											li
+												a.facebook(href='#') facebook
+											li
+												a.twitter(href='#') twitter
 
-									.row
-										.col-sm-3.text-center
-											strong.day 05
-											div.month OCT
-										.col-sm-9
-											p Expo César Caycho - Animal Humano
-					.col-sm-6.col-md-3
-						.visible-xs &nbsp;
-						.thumbnail.bg-white
-							img.img-responsive(src="img/notas/nota-3.jpg")
-							.box-detail
-								.caption
+			.row
+				.col-sm-6.col-md-3
+					.thumbnail.bg-white
+						img.img-responsive(src="img/notas/nota-1.jpg")
+						.box-detail
+							.caption
+								p
+									a(href="interior.html") Miguel Chipana opina sobre el rol de los diseñadores
+							.branding-box
+								a(href="interior.html") DOCENTES DG
+								ul.list-unstyled.pull-right.redes
+									li
+										a.facebook(href='#') facebook
+									li
+										a.twitter(href='#') twitter
+				.col-sm-6.col-md-3
+					.thumbnail.bg-white
+						img.img-responsive(src="img/notas/nota-2.jpg")
+						.box-detail
+							.caption
+								p
+									a(href="interior.html") Expodeco 2017: El evento más innovador del diseño y la arquitectura
+							.branding-box
+								a(href="interior.html") AGENDA
+								ul.list-unstyled.pull-right.redes
+									li
+										a.facebook(href='#') facebook
+									li
+										a.twitter(href='#') twitter
+				.col-sm-12.col-md-6
+					.zone
+						.zone-header
+							span ZONA PLAY
+								i.glyphicon.glyphicon-play
+
+						.zone-sliders
+							.slider-row(style="background-image: url('img/notas/nota-1.jpg')")
+								.bg-fade
+									h5 INSPIRACION
 									p
-										a(href="#") VIDEO: Creación de una ilustración para la película Ghost in the Shell
-								.branding-box
-									a(href="#") RECURSOS
-									ul.list-unstyled.pull-right.redes
-										li
-											a.facebook(href='#') facebook
-										li
-											a.twitter(href='#') twitter
+										| Shanti Sparrow. Asi se trabaja la élite del diseño [VIDEO]
+							.slider-row(style="background-image: url('img/notas/nota-2.jpg')")
+								.bg-fade
+									h5 RECURSOS
+									p
+										|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam!
+							.slider-row(style="background-image: url('img/notas/nota-3.jpg')")
+								.bg-fade
+									h5 OTROS
+									p
+										|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa.
 
-		.row
-			.col-sm-6.col-md-3
-				.thumbnail.bg-white
-					img.img-responsive(src="img/notas/nota-1.jpg")
-					.box-detail
-						.caption
-							p
-								a(href="#") Miguel Chipana opina sobre el rol de los diseñadores
-						.branding-box
-							a(href="#") DOCENTES DG
-							ul.list-unstyled.pull-right.redes
-								li
-									a.facebook(href='#') facebook
-								li
-									a.twitter(href='#') twitter
-			.col-sm-6.col-md-3
-				.thumbnail.bg-white
-					img.img-responsive(src="img/notas/nota-2.jpg")
-					.box-detail
-						.caption
-							p
-								a(href="#") Expodeco 2017: El evento más innovador del diseño y la arquitectura
-						.branding-box
-							a(href="#") AGENDA
-							ul.list-unstyled.pull-right.redes
-								li
-									a.facebook(href='#') facebook
-								li
-									a.twitter(href='#') twitter
-			.col-sm-12.col-md-6
-				.zone
-					.zone-header
-						span ZONA PLAY
-							i.glyphicon.glyphicon-play
-
-					.zone-sliders
-						.slider-row(style="background-image: url('img/notas/nota-1.jpg')")
-							.bg-fade
-								h5 INSPIRACION
-								p
-									| Shanti Sparrow. Asi se trabaja la élite del diseño [VIDEO]
-						.slider-row(style="background-image: url('img/notas/nota-2.jpg')")
-							.bg-fade
-								h5 RECURSOS
-								p
-									|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam!
-						.slider-row(style="background-image: url('img/notas/nota-3.jpg')")
-							.bg-fade
-								h5 OTROS
-								p
-									|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa.
-
-		.row
-			.col-md-10.col-md-offset-1
-				img.img-responsive.center-block(src="img/banner-middle.jpg")
-		.row
-			.col-md-10.col-md-offset-1.text-center.block-experience
-				h2
-					span #MI
-					span.test EXPERIENCIA
-				p
-					| Nuestros alumnos egresados de Isil, nos cuentan sus experiencias y anecdotas vividas
-
-	.container-fluid
-		.row.students
-			.col-md-15
-				.student-block
-					img.img-responsive.center-block(src="img/alumnos/alumno-1.jpg" alt="Alumno 1")
-					.info-alumno
-						.content-table
-							.column
-								h5 ALESSANDRA CASTILLO
-								p
-									| Cuando de pronto, empiezas a ver rosas por todos lados.
-			.col-md-15
-				.student-block
-					img.img-responsive.center-block(src="img/alumnos/alumno-2.jpg" alt="Alumno 2")
-					.info-alumno
-						.content-table
-							.column
-								h5 ALESSANDRA CASTILLO
-								p
-									| Cuando de pronto, empiezas a ver rosas por todos lados.
-			.col-md-15
-				.student-block
-					img.img-responsive.center-block(src="img/alumnos/alumno-3.jpg" alt="Alumno 3")
-					.info-alumno
-						.content-table
-							.column
-								h5 ALESSANDRA CASTILLO
-								p
-									| Cuando de pronto, empiezas a ver rosas por todos lados.
-			.col-md-15
-				.student-block
-					img.img-responsive.center-block(src="img/alumnos/alumno-4.jpg" alt="Alumno 4")
-					.info-alumno
-						.content-table
-							.column
-								h5 ALESSANDRA CASTILLO
-								p
-									| Cuando de pronto, empiezas a ver rosas por todos lados.
-			.col-md-15
-				.student-block
-					img.img-responsive.center-block(src="img/alumnos/alumno-5.jpg" alt="Alumno 5")
-					.info-alumno
-						.content-table
-							.column
-								h5 ALESSANDRA CASTILLO
-								p
-									| Cuando de pronto, empiezas a ver rosas por todos lados.
-			.col-md-15
-				.student-block
-					img.img-responsive.center-block(src="img/alumnos/alumno-1.jpg" alt="Alumno 1")
-					.info-alumno
-						.content-table
-							.column
-								h5 ALESSANDRA CASTILLO
-								p
-									| Cuando de pronto, empiezas a ver rosas por todos lados.
-			.col-md-15
-				.student-block
-					img.img-responsive.center-block(src="img/alumnos/alumno-2.jpg" alt="Alumno 2")
-					.info-alumno
-						.content-table
-							.column
-								h5 ALESSANDRA CASTILLO
-								p
-									| Cuando de pronto, empiezas a ver rosas por todos lados.
-			.col-md-15
-				.student-block
-					img.img-responsive.center-block(src="img/alumnos/alumno-3.jpg" alt="Alumno 3")
-					.info-alumno
-						.content-table
-							.column
-								h5 ALESSANDRA CASTILLO
-								p
-									| Cuando de pronto, empiezas a ver rosas por todos lados.
-		.clearfix
-
-	.container
-		.row
-			.col-sm-12.col-md-6.text-center
-				.table-block
-					.table-block__content.second
-						h6 INSPIRACION
-						p 12 ilustradores y diseñadores revisitan Twin Peaks.
-			.col-sm-6.col-md-3
-				.thumbnail.bg-white
-					img.img-responsive(src="img/notas/nota-5.jpg")
-					.box-detail
-						.caption
-							p
-								a(href="#") Identidad visual de Vertical Geopolitics Lab
-						.branding-box
-							a(href="#") INSPIRACIÓN
-							ul.list-unstyled.pull-right.redes
-								li
-									a.facebook(href='#') facebook
-								li
-									a.twitter(href='#') twitter
-			.col-sm-6.col-md-3
-				.most-viewed
-					.header
-						span LO MÁS VISTO
-
-					.contents
-						- for (var x = 0; x < 3; x++)
-							.file
-								img.img-responsive.pull-left(src="#")
-								h6 INPIRACION
-								p.small
-									| 7 Consejos para diseñar tu guia de estilos
-
-		.row
-			.col-sm-6.col-md-3
-				.thumbnail.bg-white
-					img.img-responsive(src="img/notas/nota-7.jpg")
-					.box-detail
-						.caption
-							p
-								a(href="#") Ana lozada: ¿ Los diseñadores somos artistas o no?
-						.branding-box
-							a(href="#") DOCENTES DG
-							ul.list-unstyled.pull-right.redes
-								li
-									a.facebook(href='#') facebook
-								li
-									a.twitter(href='#') twitter
-			.col-sm-6.col-md-3
-				.thumbnail.bg-white
-					img.img-responsive(src="img/notas/nota-8.jpg")
-					.box-detail
-						.caption
-							p
-								a(href="#") Charla Informativa: “El Diseño Gráfico, del lenguaje informativo al persuasivo.”
-						.branding-box
-							a(href="#") AGENDA
-							ul.list-unstyled.pull-right.redes
-								li
-									a.facebook(href='#') facebook
-								li
-									a.twitter(href='#') twitter
-			.col-sm-6.col-md-3
-				.thumbnail.bg-white
-					img.img-responsive(src="img/notas/nota-9.jpg")
-					.box-detail
-						.caption
-							p
-								a(href="#") 7 Consejos para diseñar tu guía de estilos
-						.branding-box
-							a(href="#") INSPIRACIÓN
-							ul.list-unstyled.pull-right.redes
-								li
-									a.facebook(href='#') facebook
-								li
-									a.twitter(href='#') twitter
-			.col-sm-6.col-md-3
-				.thumbnail.bg-white
-					img.img-responsive(src="img/notas/nota-10.jpg")
-					.box-detail
-						.caption
-							p
-								a(href="#") Expodeco 2017: El evento más innovador del diseño y la arquitectura
-						.branding-box
-							a(href="#") AGENDA
-							ul.list-unstyled.pull-right.redes
-								li
-									a.facebook(href='#') facebook
-								li
-									a.twitter(href='#') twitter
-		.row
-			.col-sm-8.col-sm-offset-2.text-center.content-btn-show-more
-				a.btn-show-more.bg-light VER MÁS
-	.container-fluid.row
-		.row.job-content
-			.container
-				.col-sm-12.text-center.job-info
-					i.glyphicon.glyphicon-send.send-icon
-					h3 envía tus trabajos
-					strong ¿Te gustaría mostrarle tus trabajos al mundo?
+			.row
+				.col-md-10.col-md-offset-1
+					img.img-responsive.center-block(src="img/banner-middle.jpg")
+			.row
+				.col-md-10.col-md-offset-1.text-center.block-experience
+					h2
+						span #MI
+						span.test EXPERIENCIA
 					p
-						| Envíanos un mail a contactodg@isil.pe con un enlace al trabajo que quieras compartir y pronto lo veras en el blog.
+						| Nuestros alumnos egresados de Isil, nos cuentan sus experiencias y anecdotas vividas
+
+		.container-fluid
+			.row.students
+				.col-md-15
+					.student-block
+						img.img-responsive.center-block(src="img/alumnos/alumno-1.jpg" alt="Alumno 1")
+						.info-alumno
+							.content-table
+								.column
+									h5 ALESSANDRA CASTILLO
+									p
+										| Cuando de pronto, empiezas a ver rosas por todos lados.
+				.col-md-15
+					.student-block
+						img.img-responsive.center-block(src="img/alumnos/alumno-2.jpg" alt="Alumno 2")
+						.info-alumno
+							.content-table
+								.column
+									h5 ALESSANDRA CASTILLO
+									p
+										| Cuando de pronto, empiezas a ver rosas por todos lados.
+				.col-md-15
+					.student-block
+						img.img-responsive.center-block(src="img/alumnos/alumno-3.jpg" alt="Alumno 3")
+						.info-alumno
+							.content-table
+								.column
+									h5 ALESSANDRA CASTILLO
+									p
+										| Cuando de pronto, empiezas a ver rosas por todos lados.
+				.col-md-15
+					.student-block
+						img.img-responsive.center-block(src="img/alumnos/alumno-4.jpg" alt="Alumno 4")
+						.info-alumno
+							.content-table
+								.column
+									h5 ALESSANDRA CASTILLO
+									p
+										| Cuando de pronto, empiezas a ver rosas por todos lados.
+				.col-md-15
+					.student-block
+						img.img-responsive.center-block(src="img/alumnos/alumno-5.jpg" alt="Alumno 5")
+						.info-alumno
+							.content-table
+								.column
+									h5 ALESSANDRA CASTILLO
+									p
+										| Cuando de pronto, empiezas a ver rosas por todos lados.
+				.col-md-15
+					.student-block
+						img.img-responsive.center-block(src="img/alumnos/alumno-1.jpg" alt="Alumno 1")
+						.info-alumno
+							.content-table
+								.column
+									h5 ALESSANDRA CASTILLO
+									p
+										| Cuando de pronto, empiezas a ver rosas por todos lados.
+				.col-md-15
+					.student-block
+						img.img-responsive.center-block(src="img/alumnos/alumno-2.jpg" alt="Alumno 2")
+						.info-alumno
+							.content-table
+								.column
+									h5 ALESSANDRA CASTILLO
+									p
+										| Cuando de pronto, empiezas a ver rosas por todos lados.
+				.col-md-15
+					.student-block
+						img.img-responsive.center-block(src="img/alumnos/alumno-3.jpg" alt="Alumno 3")
+						.info-alumno
+							.content-table
+								.column
+									h5 ALESSANDRA CASTILLO
+									p
+										| Cuando de pronto, empiezas a ver rosas por todos lados.
+			.clearfix
+
+		.container
+			.row
+				.col-sm-12.col-md-6.text-center
+					.table-block
+						.table-block__content.second
+							h6 INSPIRACION
+							p 12 ilustradores y diseñadores revisitan Twin Peaks.
+				.col-sm-6.col-md-3
+					.thumbnail.bg-white
+						img.img-responsive(src="img/notas/nota-5.jpg")
+						.box-detail
+							.caption
+								p
+									a(href="interior.html") Identidad visual de Vertical Geopolitics Lab
+							.branding-box
+								a(href="interior.html") INSPIRACIÓN
+								ul.list-unstyled.pull-right.redes
+									li
+										a.facebook(href='#') facebook
+									li
+										a.twitter(href='#') twitter
+				.col-sm-6.col-md-3
+					.most-viewed
+						.header
+							span LO MÁS VISTO
+
+						.contents
+							- for (var x = 0; x < 3; x++)
+								.file
+									img.img-responsive.pull-left(src="#")
+									h6 INPIRACION
+									p.small
+										| 7 Consejos para diseñar tu guia de estilos
+
+			.row
+				.col-sm-6.col-md-3
+					.thumbnail.bg-white
+						img.img-responsive(src="img/notas/nota-7.jpg")
+						.box-detail
+							.caption
+								p
+									a(href="interior.html") Ana lozada: ¿ Los diseñadores somos artistas o no?
+							.branding-box
+								a(href="interior.html") DOCENTES DG
+								ul.list-unstyled.pull-right.redes
+									li
+										a.facebook(href='#') facebook
+									li
+										a.twitter(href='#') twitter
+				.col-sm-6.col-md-3
+					.thumbnail.bg-white
+						img.img-responsive(src="img/notas/nota-8.jpg")
+						.box-detail
+							.caption
+								p
+									a(href="interior.html") Charla Informativa: “El Diseño Gráfico, del lenguaje informativo al persuasivo.”
+							.branding-box
+								a(href="interior.html") AGENDA
+								ul.list-unstyled.pull-right.redes
+									li
+										a.facebook(href='#') facebook
+									li
+										a.twitter(href='#') twitter
+				.col-sm-6.col-md-3
+					.thumbnail.bg-white
+						img.img-responsive(src="img/notas/nota-9.jpg")
+						.box-detail
+							.caption
+								p
+									a(href="interior.html") 7 Consejos para diseñar tu guía de estilos
+							.branding-box
+								a(href="interior.html") INSPIRACIÓN
+								ul.list-unstyled.pull-right.redes
+									li
+										a.facebook(href='#') facebook
+									li
+										a.twitter(href='#') twitter
+				.col-sm-6.col-md-3
+					.thumbnail.bg-white
+						img.img-responsive(src="img/notas/nota-10.jpg")
+						.box-detail
+							.caption
+								p
+									a(href="interior.html") Expodeco 2017: El evento más innovador del diseño y la arquitectura
+							.branding-box
+								a(href="interior.html") AGENDA
+								ul.list-unstyled.pull-right.redes
+									li
+										a.facebook(href='#') facebook
+									li
+										a.twitter(href='#') twitter
+			.row
+				.col-sm-8.col-sm-offset-2.text-center.content-btn-show-more
+					a.btn-show-more.bg-light VER MÁS

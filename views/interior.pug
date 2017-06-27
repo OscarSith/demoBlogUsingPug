@@ -1,0 +1,126 @@
+extends partials/layout.pug
+
+block banner
+	#fb-root
+
+	include partials/home-interior
+
+block content
+	.content-interior.row
+		.container
+			.col-md-2.mt15
+				h5.bold Compartir
+				ul.share.list-unstyled
+					li
+						a.tw-interior(href='#') tw
+					li
+						a.fb-interior(href='#') fb
+			.col-md-7.mt15
+				.row
+					.col-sm-12
+						h5.bold
+							| Rocio Torres - DOCENTE
+						span.date.bold 27 . 06 . 2016
+
+						h4.main-title.bold
+							| Genius Loci es la historia narrada por la diseñadora y artista visual rusa Anastasia Savinova, una serie de collages que tiene como objetivo identificar las diferencias y similitudes entre diferentes ciudades.
+
+						p
+							| Mezclando diferentes fotografías de edificios tomadas en viajes, Anastasia intenta construir el feeling del lugar, transmitido a través de collages de gran escala que se asemejan a nuevas arquitecturas que reflejan la mentalidad y el modo de vida de la cultura a la que se refieren.
+
+						p
+							| La serie se llama Genius Loci, que para los antiguos romanos era el espíritu protector de un lugar, pero utilizado para referirse a la atmósfera distintiva de una ubicación. Una casa grande en cada collage compuesta de fragmentos de otros edificios típicos de cada ciudad o país que pisa.
+				.row
+					.col-sm-12.mb15
+						img.img-responsive.center-block(src="img/foto-interior-1.jpg")
+				.row
+					.col-sm-12.mb15
+						img.img-responsive.center-block(src="img/foto-interior-2.jpg")
+				.row
+					.col-sm-12.mb15
+						img.img-responsive.center-block(src="img/foto-interior-3.jpg")
+
+				.row
+					.col-sm-12
+						h2.extra-bold COMENTARIOS
+						.embed-responsive.embed-responsive-16by9
+							.embed-responsive-item.fb-comments(data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="3" data-width="650")
+
+			.col-md-3.mt15
+				include partials/agenda.pug
+
+				.most-viewed.mt15
+					.header
+						span SUGERIDOS
+
+					.contents
+						- for (var x = 0; x < 3; x++)
+							.file
+								img.img-responsive.pull-left(src="#")
+								h6 INPIRACION
+								p.small
+									| 7 Consejos para diseñar tu guia de estilos
+
+				.most-viewed
+						.header
+							span LO MÁS VISTO
+
+						.contents
+							- for (var x = 0; x < 3; x++)
+								.file
+									img.img-responsive.pull-left(src="#")
+									h6 INPIRACION
+									p.small
+										| 7 Consejos para diseñar tu guia de estilos
+		.container-fluid
+			.row.bg-grey
+				.container
+					.col-md-8.col-md-offset-2
+						h2.extra-bold.title TE PUEDE INTERESAR
+					.col-md-10.col-md-offset-1
+						.row
+							.col-md-4
+								.thumbnail.bg-white
+									img.img-responsive(src="img/notas/nota-5.jpg")
+									.box-detail
+										.caption
+											p
+												a(href="interior.html") Ana lozada: ¿ Los diseñadores somos artistas o no?
+										.branding-box
+											a(href="interior.html") DOCENTES DG
+											ul.list-unstyled.pull-right.redes
+												li
+													a.facebook(href='#') facebook
+												li
+													a.twitter(href='#') twitter
+
+							.col-md-4
+								.thumbnail.bg-white
+									img.img-responsive(src="img/notas/nota-2.jpg")
+									.box-detail
+										.caption
+											p
+												a(href="interior.html") Charla Informativa: “El Diseño Gráfico, del lenguaje informativo al persuasivo.”
+										.branding-box
+											a(href="interior.html") AGENDA
+											ul.list-unstyled.pull-right.redes
+												li
+													a.facebook(href='#') facebook
+												li
+													a.twitter(href='#') twitter
+
+							.col-md-4
+								.thumbnail.bg-white
+									img.img-responsive(src="img/notas/nota-3.jpg")
+									.box-detail
+										.caption
+											p
+												a(href="interior.html") 7 Consejos para diseñar tu guía de estilos
+										.branding-box
+											a(href="interior.html") INSPIRACION
+											ul.list-unstyled.pull-right.redes
+												li
+													a.facebook(href='#') facebook
+												li
+													a.twitter(href='#') twitter
+

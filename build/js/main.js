@@ -1,3 +1,11 @@
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.9&appId=1614489195537932";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
 var prevArrowButton = '<button type="button" class="slick-prev"><i class="glyphicon glyphicon-menu-left"></i></button>';
 var nextArrowButton = '<button type="button" class="slick-next"><i class="glyphicon glyphicon-menu-right"></i></button>';
 

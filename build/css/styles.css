@@ -3243,204 +3243,246 @@ header .big-banner {
     font-family: montserratextra_bold;
     line-height: 1.2; }
 
-.body-content {
+.body-content .main {
   margin-top: -100px; }
-  .body-content .list-proyects-toolbar {
-    margin-bottom: 10px; }
-    .body-content .list-proyects-toolbar .arrows button + button {
-      margin-left: 8px; }
-    .body-content .list-proyects-toolbar strong.pull-left {
-      color: #fff;
-      margin: 6px 12px 0; }
-    .body-content .list-proyects-toolbar button {
-      background-color: transparent;
-      border: 1px solid #fff;
-      color: #fff;
-      padding: 5px 10px; }
-      .body-content .list-proyects-toolbar button:hover {
-        background-color: #fff;
-        color: #262834; }
-    .body-content .list-proyects-toolbar .pull-right a {
-      color: #fff; }
-  .body-content .thumbnail {
-    border: none;
-    border-radius: 0;
-    background-color: #262834;
-    padding: 0; }
-    .body-content .thumbnail .box-detail:hover {
-      background-color: #0acffe; }
-      .body-content .thumbnail .box-detail:hover a {
-        color: #fff; }
-    .body-content .thumbnail .caption {
-      color: #fff;
-      padding: 20px;
-      min-height: 96px; }
-      .body-content .thumbnail .caption p {
-        margin-bottom: 0; }
-        .body-content .thumbnail .caption p a:hover {
-          color: #fff; }
-    .body-content .thumbnail .branding-box {
-      border-top: 1px solid #414465;
-      padding: 20px; }
-      .body-content .thumbnail .branding-box a {
-        font-family: montserratsemi_bold;
-        color: #495aff; }
-    .body-content .thumbnail.bg-white {
-      background-color: #fff; }
-      .body-content .thumbnail.bg-white .caption {
-        color: #414465; }
-      .body-content .thumbnail.bg-white .branding-box {
-        border-top-color: #f2f2f2; }
-  .body-content .table-block {
-    display: table;
-    width: 100%;
-    height: 386px;
-    margin-bottom: 20px; }
-    .body-content .table-block__content {
-      display: table-cell;
-      background: url("../img/bg-nota-abridora.jpg") no-repeat 50% 50%;
-      vertical-align: middle;
-      padding-left: 30px;
-      padding-right: 30px;
-      color: #fff; }
-      .body-content .table-block__content.second {
-        background-image: url("../img/bg-nota-abridora-2.jpg"); }
-      .body-content .table-block__content p {
-        font-size: 1.8em;
-        letter-spacing: 1.5px;
-        font-family: montserratextra_bold; }
-  .body-content .diary {
-    padding: 6px;
-    background: #0ccbfe;
-    background: -moz-linear-gradient(top, #0ccbfe 0%, #485cff 100%);
-    background: -webkit-linear-gradient(top, #0ccbfe 0%, #485cff 100%);
-    background: linear-gradient(to bottom, #0ccbfe 0%, #485cff 100%); }
-    .body-content .diary__content {
-      background-color: #ededed;
-      padding: 12px; }
-      .body-content .diary__content .header h3 {
-        margin-top: 0;
-        font-family: montserratsemi_bold;
-        color: #0acffe; }
-      .body-content .diary__content .img {
-        height: 146px;
-        background: url("../img/flyersthumb_qjag_defaultPhoto.png") no-repeat 50% 50%;
-        margin-bottom: 10px; }
-      .body-content .diary__content .list .day {
-        font-size: 2em;
-        line-height: .8; }
-      .body-content .diary__content .list .month {
-        display: block;
-        color: #505050;
-        font-family: montserratlight; }
-      .body-content .diary__content .list .row {
-        margin-left: 0;
-        margin-right: 0; }
-        .body-content .diary__content .list .row p {
-          color: #505050;
-          font-family: montserratlight; }
-        .body-content .diary__content .list .row:not(:last-child) {
-          border-bottom: 1px solid #ccc;
-          margin-bottom: 10px;
-          padding-bottom: 5px; }
-  .body-content .students {
-    margin-bottom: 30px;
-    margin-top: 10px; }
-    .body-content .students > button.slick-arrow {
-      background-color: transparent;
-      border: 2px solid #262834;
-      color: #262834;
-      padding: 15px 20px;
-      font-size: 1.4em;
-      position: absolute;
-      top: 40%;
-      z-index: 10; }
-      .body-content .students > button.slick-arrow:hover {
-        background-color: #fff;
-        border-color: #fff; }
-    .body-content .students .slick-prev {
-      left: 0; }
-    .body-content .students .slick-next {
-      right: 0; }
-    .body-content .students .student-block:hover .info-alumno {
-      background-color: rgba(61, 75, 218, 0.8); }
-      .body-content .students .student-block:hover .info-alumno .column {
-        display: table-cell; }
-        .body-content .students .student-block:hover .info-alumno .column h5 {
-          font: 1.8em montserratextra_bold; }
-        .body-content .students .student-block:hover .info-alumno .column p {
-          font-family: montserratlight; }
-    .body-content .students .info-alumno {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      transition: background-color 0.7s ease;
-      -webkit-transition: background-color 0.7s ease;
-      -moz-transition: background-color 0.7s ease;
-      -o-transition: background-color 0.7s ease;
-      background: transparent;
-      color: #fff;
-      padding: 20px;
-      height: 100%; }
-      .body-content .students .info-alumno .content-table {
-        display: table;
-        height: inherit; }
-        .body-content .students .info-alumno .content-table .column {
-          display: none;
-          vertical-align: bottom; }
-  .body-content .zone-header {
-    padding: 10px 15px;
+
+.body-content .list-proyects-toolbar {
+  margin-bottom: 10px; }
+  .body-content .list-proyects-toolbar .arrows button + button {
+    margin-left: 8px; }
+  .body-content .list-proyects-toolbar strong.pull-left {
     color: #fff;
-    background-color: #000; }
-  .body-content .zone-sliders {
-    height: 349px; }
-    .body-content .zone-sliders .slick-list, .body-content .zone-sliders .slick-track, .body-content .zone-sliders .slick-slide {
-      height: inherit; }
-    .body-content .zone-sliders .slider-row {
-      background-size: cover;
-      color: #fff; }
-      .body-content .zone-sliders .slider-row .bg-fade {
-        height: inherit;
-        padding: 20px;
-        background: transparent;
-        background: -moz-linear-gradient(top, transparent 0%, #333 100%);
-        background: -webkit-linear-gradient(top, transparent 0%, #333 100%);
-        background: linear-gradient(to bottom, transparent 0%, #333 100%); }
-      .body-content .zone-sliders .slider-row h5 {
-        padding-top: 16em; }
-      .body-content .zone-sliders .slider-row p {
-        width: 80%; }
-  .body-content .zone .slick-arrow {
-    position: absolute;
-    top: 44%;
+    margin: 6px 12px 0; }
+  .body-content .list-proyects-toolbar button {
     background-color: transparent;
     border: 1px solid #fff;
-    padding: 6px 10px;
     color: #fff;
-    z-index: 9; }
-  .body-content .zone .slick-prev {
-    left: 20px; }
-  .body-content .zone .slick-next {
-    right: 20px; }
-  .body-content .most-viewed .header {
-    padding: 10px 15px;
+    padding: 5px 10px; }
+    .body-content .list-proyects-toolbar button:hover {
+      background-color: #fff;
+      color: #262834; }
+  .body-content .list-proyects-toolbar .pull-right a {
+    color: #fff; }
+
+.body-content .table-block {
+  display: table;
+  width: 100%;
+  height: 386px;
+  margin-bottom: 20px; }
+  .body-content .table-block__content {
+    display: table-cell;
+    background: url("../img/bg-nota-abridora.jpg") no-repeat 50% 50%;
+    vertical-align: middle;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #fff; }
+    .body-content .table-block__content.second {
+      background-image: url("../img/bg-nota-abridora-2.jpg"); }
+    .body-content .table-block__content p {
+      font-size: 1.8em;
+      letter-spacing: 1.5px;
+      font-family: montserratextra_bold; }
+
+.body-content .students {
+  margin-bottom: 30px;
+  margin-top: 10px; }
+  .body-content .students > button.slick-arrow {
+    background-color: transparent;
+    border: 2px solid #262834;
+    color: #262834;
+    padding: 15px 20px;
+    font-size: 1.4em;
+    position: absolute;
+    top: 40%;
+    z-index: 10; }
+    .body-content .students > button.slick-arrow:hover {
+      background-color: #fff;
+      border-color: #fff; }
+  .body-content .students .slick-prev {
+    left: 0; }
+  .body-content .students .slick-next {
+    right: 0; }
+  .body-content .students .student-block:hover .info-alumno {
+    background-color: rgba(61, 75, 218, 0.8); }
+    .body-content .students .student-block:hover .info-alumno .column {
+      display: table-cell; }
+      .body-content .students .student-block:hover .info-alumno .column h5 {
+        font: 1.8em montserratextra_bold; }
+      .body-content .students .student-block:hover .info-alumno .column p {
+        font-family: montserratlight; }
+  .body-content .students .info-alumno {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.7s ease;
+    -webkit-transition: background-color 0.7s ease;
+    -moz-transition: background-color 0.7s ease;
+    -o-transition: background-color 0.7s ease;
+    background: transparent;
     color: #fff;
-    background-color: #000; }
-  .body-content .most-viewed .contents .file {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    overflow: hidden; }
-    .body-content .most-viewed .contents .file:not(:last-child) {
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 15px; }
-  .body-content .most-viewed .contents img {
-    height: 90px;
-    width: 127px;
-    margin-right: 10px; }
-  .body-content .most-viewed .contents h6 {
-    margin-top: 0; }
+    padding: 20px;
+    height: 100%; }
+    .body-content .students .info-alumno .content-table {
+      display: table;
+      height: inherit; }
+      .body-content .students .info-alumno .content-table .column {
+        display: none;
+        vertical-align: bottom; }
+
+.body-content .zone-header {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #000; }
+
+.body-content .zone-sliders {
+  height: 349px; }
+  .body-content .zone-sliders .slick-list, .body-content .zone-sliders .slick-track, .body-content .zone-sliders .slick-slide {
+    height: inherit; }
+  .body-content .zone-sliders .slider-row {
+    background-size: cover;
+    color: #fff; }
+    .body-content .zone-sliders .slider-row .bg-fade {
+      height: inherit;
+      padding: 20px;
+      background: transparent;
+      background: -moz-linear-gradient(top, transparent 0%, #333 100%);
+      background: -webkit-linear-gradient(top, transparent 0%, #333 100%);
+      background: linear-gradient(to bottom, transparent 0%, #333 100%); }
+    .body-content .zone-sliders .slider-row h5 {
+      padding-top: 16em; }
+    .body-content .zone-sliders .slider-row p {
+      width: 80%; }
+
+.body-content .zone .slick-arrow {
+  position: absolute;
+  top: 44%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 6px 10px;
+  color: #fff;
+  z-index: 9; }
+
+.body-content .zone .slick-prev {
+  left: 20px; }
+
+.body-content .zone .slick-next {
+  right: 20px; }
+
+.thumbnail {
+  border: none;
+  border-radius: 0;
+  background-color: #262834;
+  padding: 0; }
+  .thumbnail .box-detail:hover {
+    background-color: #0acffe; }
+    .thumbnail .box-detail:hover a {
+      color: #fff; }
+  .thumbnail .caption {
+    color: #fff;
+    padding: 20px;
+    min-height: 96px; }
+    .thumbnail .caption p {
+      margin-bottom: 0; }
+      .thumbnail .caption p a:hover {
+        color: #fff; }
+  .thumbnail .branding-box {
+    border-top: 1px solid #414465;
+    padding: 20px; }
+    .thumbnail .branding-box a {
+      font-family: montserratsemi_bold;
+      color: #495aff; }
+  .thumbnail.bg-white {
+    background-color: #fff; }
+    .thumbnail.bg-white .caption {
+      color: #414465; }
+    .thumbnail.bg-white .branding-box {
+      border-top-color: #f2f2f2; }
+
+.most-viewed .header {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #000; }
+
+.most-viewed .contents .file {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  overflow: hidden; }
+  .most-viewed .contents .file:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px; }
+
+.most-viewed .contents img {
+  height: 90px;
+  width: 127px;
+  margin-right: 10px; }
+
+.most-viewed .contents h6 {
+  margin-top: 0; }
+
+.diary {
+  padding: 6px;
+  background: #0ccbfe;
+  background: -moz-linear-gradient(top, #0ccbfe 0%, #485cff 100%);
+  background: -webkit-linear-gradient(top, #0ccbfe 0%, #485cff 100%);
+  background: linear-gradient(to bottom, #0ccbfe 0%, #485cff 100%); }
+  .diary__content {
+    background-color: #ededed;
+    padding: 12px; }
+    .diary__content .header h3 {
+      margin-top: 0;
+      font-family: montserratsemi_bold;
+      color: #0acffe; }
+    .diary__content .img {
+      height: 146px;
+      background: url("../img/flyersthumb_qjag_defaultPhoto.png") no-repeat 50% 50%;
+      margin-bottom: 10px; }
+    .diary__content .list .day {
+      font-size: 2em;
+      line-height: .8; }
+    .diary__content .list .month {
+      display: block;
+      color: #505050;
+      font-family: montserratlight; }
+    .diary__content .list .row {
+      margin-left: 0;
+      margin-right: 0; }
+      .diary__content .list .row p {
+        color: #505050;
+        font-family: montserratlight; }
+      .diary__content .list .row:not(:last-child) {
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+        padding-bottom: 5px; }
+
+/* INTERIOR */
+.content-interior {
+  line-height: 1.8em;
+  background-color: #fff; }
+  .content-interior .main-title {
+    line-height: 25px; }
+  .content-interior .diary .diary__content {
+    background-color: #fff !important; }
+  .content-interior .title {
+    margin-top: 1.3em;
+    margin-bottom: .8em; }
+  .content-interior p, .content-interior h4 {
+    margin-bottom: 20px; }
+  .content-interior .share li {
+    display: inline-block;
+    margin-right: -1px;
+    text-indent: -9999px;
+    vertical-align: top; }
+    .content-interior .share li a {
+      display: block;
+      padding: 10px 20px; }
+    .content-interior .share li .tw-interior {
+      background: url(../img/redes-negro.png) no-repeat -42px 0;
+      border: 1px solid #000; }
+    .content-interior .share li .fb-interior {
+      background: url(../img/redes-negro.png) no-repeat 0 0;
+      border: 1px solid #000; }
 
 .redes li {
   display: inline-block;
@@ -3478,8 +3520,7 @@ header .big-banner {
   background: -moz-linear-gradient(top, #0ccbfe 0%, #485cff 100%);
   background: -webkit-linear-gradient(top, #0ccbfe 0%, #485cff 100%);
   background: linear-gradient(to bottom, #0ccbfe 0%, #485cff 100%);
-  color: #fff;
-  margin-top: 1.3em; }
+  color: #fff; }
   .job-content .job-info {
     padding: 54px 0; }
     .job-content .job-info h3 {
@@ -3521,6 +3562,21 @@ footer {
 
 a {
   color: inherit; }
+
+.mb15 {
+  margin-bottom: 15px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.extra-bold {
+  font-family: 'montserratextra_bold'; }
+
+.bold {
+  font-family: 'montserratsemi_bold'; }
+
+.bg-grey {
+  background-color: #ededed; }
 
 @media (max-width: 767px) {
   header .big-banner__desc {

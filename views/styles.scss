@@ -17,6 +17,7 @@
 $black: #000;
 $semiBlack: #262834;
 $greyLight: #a7a7a7;
+$bgGrey: #ededed;
 $white: #fff;
 $linkBlue: #337ab7;
 $blue: #495aff;
@@ -160,7 +161,10 @@ header {
 }
 
 .body-content {
-	margin-top: -100px;
+
+	.main {
+		margin-top: -100px;
+	}
 
 	.list-proyects-toolbar {
 		margin-bottom: 10px;
@@ -190,56 +194,6 @@ header {
 		}
 	}
 
-	.thumbnail {
-		border: none;
-		border-radius: 0;
-		background-color: $semiBlack;
-		padding: 0;
-
-		.box-detail:hover {
-			background-color: $turquesa;
-
-			a {
-				color: $white;
-			}
-		}
-		.caption {
-			color: $white;
-			padding: 20px;
-			min-height: 96px;
-
-			p {
-				margin-bottom: 0;
-
-				a:hover {
-					color: $white;
-				}
-			}
-		}
-
-		.branding-box {
-			border-top: 1px solid #414465;
-			padding: 20px;
-
-			a {
-				font-family: montserratsemi_bold;
-				color: $blue;
-			}
-		}
-
-		&.bg-white {
-			background-color: $white;
-
-			.caption {
-				color: #414465;
-			}
-
-			.branding-box {
-				border-top-color: #f2f2f2;
-			}
-		}
-	}
-
 	.table-block {
 		display: table;
 		width: 100%;
@@ -262,56 +216,6 @@ header {
 				font-size: 1.8em;
 				letter-spacing: 1.5px;
 				font-family: montserratextra_bold;
-			}
-		}
-	}
-
-	.diary {
-		padding: 6px;
-		@include backgroundGradient();
-
-		&__content {
-			background-color: $bg;
-			padding: 12px;
-
-			.header {
-				h3 {
-					margin-top: 0;
-					font-family: montserratsemi_bold;
-					color: $turquesa;
-				}
-			}
-			.img {
-				height: 146px;
-				background: url('../img/flyersthumb_qjag_defaultPhoto.png') no-repeat 50% 50%;
-				margin-bottom: 10px;
-			}
-			.list {
-				.day {
-					font-size: 2em;
-					line-height: .8;
-				}
-				.month {
-					display: block;
-					color: #505050;
-					font-family: montserratlight;
-				}
-
-				.row {
-					margin-left: 0;
-					margin-right: 0;
-
-					p {
-						color: #505050;
-						font-family: montserratlight;
-					}
-
-					&:not(:last-child) {
-						border-bottom: 1px solid #ccc;
-						margin-bottom: 10px;
-						padding-bottom: 5px;
-					}
-				}
 			}
 		}
 	}
@@ -437,29 +341,176 @@ header {
 		}
 	}
 
-	.most-viewed {
-		.header {
-			@include black_header();
+}
+
+.thumbnail {
+	border: none;
+	border-radius: 0;
+	background-color: $semiBlack;
+	padding: 0;
+
+	.box-detail:hover {
+		background-color: $turquesa;
+
+		a {
+			color: $white;
 		}
-		.contents {
-			.file {
-				margin-top: 15px;
-				margin-bottom: 15px;
-				overflow: hidden;
+	}
+	.caption {
+		color: $white;
+		padding: 20px;
+		min-height: 96px;
+
+		p {
+			margin-bottom: 0;
+
+			a:hover {
+				color: $white;
+			}
+		}
+	}
+
+	.branding-box {
+		border-top: 1px solid #414465;
+		padding: 20px;
+
+		a {
+			font-family: montserratsemi_bold;
+			color: $blue;
+		}
+	}
+
+	&.bg-white {
+		background-color: $white;
+
+		.caption {
+			color: #414465;
+		}
+
+		.branding-box {
+			border-top-color: #f2f2f2;
+		}
+	}
+}
+
+.most-viewed {
+	.header {
+		@include black_header();
+	}
+	.contents {
+		.file {
+			margin-top: 15px;
+			margin-bottom: 15px;
+			overflow: hidden;
+
+			&:not(:last-child) {
+				border-bottom: 1px solid #ccc;
+				padding-bottom: 15px;
+			}
+		}
+
+		img {
+			height: 90px;
+			width: 127px;
+			margin-right: 10px;
+		}
+		h6 {
+			margin-top: 0;
+		}
+	}
+}
+
+.diary {
+	padding: 6px;
+	@include backgroundGradient();
+
+	&__content {
+		background-color: $bg;
+		padding: 12px;
+
+		.header {
+			h3 {
+				margin-top: 0;
+				font-family: montserratsemi_bold;
+				color: $turquesa;
+			}
+		}
+		.img {
+			height: 146px;
+			background: url('../img/flyersthumb_qjag_defaultPhoto.png') no-repeat 50% 50%;
+			margin-bottom: 10px;
+		}
+		.list {
+			.day {
+				font-size: 2em;
+				line-height: .8;
+			}
+			.month {
+				display: block;
+				color: #505050;
+				font-family: montserratlight;
+			}
+
+			.row {
+				margin-left: 0;
+				margin-right: 0;
+
+				p {
+					color: #505050;
+					font-family: montserratlight;
+				}
 
 				&:not(:last-child) {
 					border-bottom: 1px solid #ccc;
-					padding-bottom: 15px;
+					margin-bottom: 10px;
+					padding-bottom: 5px;
 				}
 			}
+		}
+	}
+}
 
-			img {
-				height: 90px;
-				width: 127px;
-				margin-right: 10px;
+/* INTERIOR */
+.content-interior {
+	line-height: 1.8em;
+	background-color: $white;
+
+	.main-title {
+		line-height: 25px;
+	}
+
+	.diary .diary__content {
+		background-color: $white !important;
+	}
+
+	.title {
+		margin-top: 1.3em;
+		margin-bottom: .8em;
+	}
+
+	p, h4 {
+		margin-bottom: 20px;
+	}
+
+	.share {
+		li {
+			display: inline-block;
+			margin-right: -1px;
+			text-indent: -9999px;
+			vertical-align: top;
+
+			a {
+				display: block;
+				padding: 10px 20px;
 			}
-			h6 {
-				margin-top: 0;
+
+			.tw-interior {
+				background: url(../img/redes-negro.png) no-repeat -42px 0;
+				border: 1px solid #000;
+			}
+			.fb-interior {
+				background: url(../img/redes-negro.png) no-repeat 0 0;
+				border: 1px solid #000;
 			}
 		}
 	}
@@ -514,7 +565,6 @@ header {
 .job-content {
 	@include backgroundGradient();
 	color: $white;
-	margin-top: 1.3em;
 
 	.job-info {
 		padding: 54px 0;
@@ -573,6 +623,21 @@ footer {
 }
 a {
 	color: inherit;
+}
+.mb15 {
+	margin-bottom: 15px;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.extra-bold {
+	font-family: 'montserratextra_bold';
+}
+.bold {
+	font-family: 'montserratsemi_bold';
+}
+.bg-grey {
+	background-color: $bgGrey;
 }
 
 @media (max-width: 767px) {
