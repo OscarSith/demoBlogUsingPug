@@ -722,6 +722,14 @@ a {
 		margin-top: 2.5em;
 	}
 
+	.cbo {
+		width: 150px;
+		display: inline-block;
+	}
+	.curso {
+		margin-right: 10px;
+	}
+
 	.bg-banner {
 		background: url('../img/interna_proyectos.jpeg') 50% 50% no-repeat;
 		background-size: cover;
@@ -797,6 +805,15 @@ a {
 		h1 {
 			font-size: 34px;
 			margin-top: 1.5em;
+		}
+
+		.cbo {
+			width: 210px;
+		}
+
+		.curso {
+			margin-right: 0;
+			margin-bottom: 10px;
 		}
 	}
 }

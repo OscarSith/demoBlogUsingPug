@@ -3967,6 +3967,11 @@ a {
     font-family: montserratsemi_bold;
     font-size: 3.7em;
     margin-top: 2.5em; }
+  .banners .cbo {
+    width: 150px;
+    display: inline-block; }
+  .banners .curso {
+    margin-right: 10px; }
   .banners .bg-banner {
     background: url("../img/interna_proyectos.jpeg") 50% 50% no-repeat;
     background-size: cover;
@@ -4010,7 +4015,12 @@ a {
     height: 240px; }
     .banners h1 {
       font-size: 34px;
-      margin-top: 1.5em; } }
+      margin-top: 1.5em; }
+    .banners .cbo {
+      width: 210px; }
+    .banners .curso {
+      margin-right: 0;
+      margin-bottom: 10px; } }
 
 @media (min-width: 1200px) {
   .col-lg-15 {
