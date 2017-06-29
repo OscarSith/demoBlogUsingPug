@@ -4005,7 +4005,12 @@ a {
   .interior-home .title-header {
     top: 30%; }
     .interior-home .title-header h1 {
-      font-size: 1.2em; } }
+      font-size: 1.2em; }
+  .banners {
+    height: 240px; }
+    .banners h1 {
+      font-size: 34px;
+      margin-top: 1.5em; } }
 
 @media (min-width: 1200px) {
   .col-lg-15 {

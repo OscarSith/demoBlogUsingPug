@@ -790,6 +790,15 @@ a {
 			font-size: 1.2em;
 		}
 	}
+
+	.banners {
+		height: 240px;
+
+		h1 {
+			font-size: 34px;
+			margin-top: 1.5em;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
