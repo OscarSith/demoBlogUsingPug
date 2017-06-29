@@ -1,8 +1,6 @@
 extends partials/layout.pug
 
 block banner
-	#fb-root
-
 	include partials/home-interior
 
 block content
@@ -72,55 +70,6 @@ block content
 									h6 INPIRACION
 									p.small
 										| 7 Consejos para diseñar tu guia de estilos
-		.container-fluid
-			.row.bg-grey
-				.container
-					.col-md-8.col-md-offset-2
-						h2.extra-bold.title TE PUEDE INTERESAR
-					.col-md-10.col-md-offset-1
-						.row
-							.col-sm-4
-								.thumbnail.bg-white
-									img.img-responsive(src="img/notas/nota-5.jpg")
-									.box-detail
-										.caption
-											p
-												a(href="interior.html") Ana lozada: ¿ Los diseñadores somos artistas o no?
-										.branding-box
-											a(href="interior.html") DOCENTES DG
-											ul.list-unstyled.pull-right.redes
-												li
-													a.facebook(href='#') facebook
-												li
-													a.twitter(href='#') twitter
 
-							.col-sm-4
-								.thumbnail.bg-white
-									img.img-responsive(src="img/notas/nota-2.jpg")
-									.box-detail
-										.caption
-											p
-												a(href="interior.html") Charla Informativa: “El Diseño Gráfico, del lenguaje informativo al persuasivo.”
-										.branding-box
-											a(href="interior.html") AGENDA
-											ul.list-unstyled.pull-right.redes
-												li
-													a.facebook(href='#') facebook
-												li
-													a.twitter(href='#') twitter
-
-							.col-sm-4
-								.thumbnail.bg-white
-									img.img-responsive(src="img/notas/nota-3.jpg")
-									.box-detail
-										.caption
-											p
-												a(href="interior.html") 7 Consejos para diseñar tu guía de estilos
-										.branding-box
-											a(href="interior.html") INSPIRACION
-											ul.list-unstyled.pull-right.redes
-												li
-													a.facebook(href='#') facebook
-												li
-													a.twitter(href='#') twitter
+		include partials/interesar
 

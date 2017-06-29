@@ -74,3 +74,10 @@ $('button.navbar-toggle').on('click', function(e) {
 		}
 	});
 });
+
+$('.panel-group').on('click', '.panel-heading', prova);
+
+function prova(e) {
+	$(e.delegateTarget).find('.state-active').removeClass('state-active');
+	$(e.currentTarget).addClass('state-active');
+}
