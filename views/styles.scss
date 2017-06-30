@@ -70,7 +70,7 @@ $turquesa: #0acffe;
 }
 
 body {
-	padding-top: 50px;
+	padding-top: 60px;
 	background-color: $bg;
 	font-family: montserratregular, Arial, Helvetica;
 }
@@ -198,32 +198,6 @@ header {
 		}
 	}
 
-	.table-block {
-		display: table;
-		width: 100%;
-		height: 386px;
-		margin-bottom: 20px;
-
-		&__content {
-			display: table-cell;
-			background: url('../img/bg-nota-abridora.jpg') no-repeat 50% 50%;
-			vertical-align: middle;
-			padding-left: 30px;
-			padding-right: 30px;
-			color: $white;
-
-			&.second {
-				background-image: url('../img/bg-nota-abridora-2.jpg');
-			}
-
-			p {
-				font-size: 1.8em;
-				letter-spacing: 1.5px;
-				font-family: montserratextra_bold;
-			}
-		}
-	}
-
 	.students {
 		margin-bottom: 30px;
 		margin-top: 10px;
@@ -252,50 +226,6 @@ header {
 			right: 0;
 		}
 
-		.student-block {
-
-			&:hover .info-alumno {
-				background-color: rgba(61, 75, 218, 0.8);
-
-				.column {
-					display: table-cell;
-
-					h5 {
-						font: 1.8em montserratextra_bold;
-					}
-
-					p {
-						font-family: montserratlight;
-					}
-				}
-			}
-		}
-
-		.info-alumno {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			transition: background-color 0.7s ease;
-			-webkit-transition: background-color 0.7s ease;
-			-moz-transition: background-color 0.7s ease;
-			-o-transition: background-color 0.7s ease;
-			background: transparent;
-			color: $white;
-			padding: 20px;
-			height: 100%;
-
-			.content-table {
-				display: table;
-				height: inherit;
-
-				.column {
-					display: none;
-					vertical-align: bottom;
-				}
-			}
-		}
 	}
 
 	.zone {
@@ -342,6 +272,100 @@ header {
 		}
 		.slick-next {
 			right: 20px;
+		}
+	}
+}
+
+.student-block {
+
+	&:hover .info-alumno {
+		background-color: rgba(61, 75, 218, 0.8);
+
+		.column {
+			display: table-cell;
+
+			h5 {
+				font: 1.8em montserratextra_bold;
+			}
+
+			p {
+				font-family: montserratlight;
+			}
+		}
+	}
+}
+
+.info-alumno {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: background-color 0.7s ease;
+	-webkit-transition: background-color 0.7s ease;
+	-moz-transition: background-color 0.7s ease;
+	-o-transition: background-color 0.7s ease;
+	background: transparent;
+	color: $white;
+	padding: 20px;
+	height: 100%;
+
+	.content-table {
+		display: table;
+		height: inherit;
+
+		.column {
+			display: none;
+			vertical-align: bottom;
+
+			&.text-center {
+				vertical-align: middle;
+				padding-left: 15%;
+				padding-right: 15%;
+			}
+		}
+	}
+}
+
+.table-block {
+	display: table;
+	width: 100%;
+	height: 386px;
+	margin-bottom: 20px;
+
+	&.miexp {
+		height: 369px;
+		margin-bottom: 0px;
+	}
+
+	&__content {
+		display: table-cell;
+		background: url('../img/bg-nota-abridora.jpg') no-repeat 50% 50%;
+		vertical-align: middle;
+		padding-left: 30px;
+		padding-right: 30px;
+		color: $white;
+
+		&.second {
+			background-image: url('../img/bg-nota-abridora-2.jpg');
+		}
+
+		&.no-image {
+			background-image: none;
+			background-color: $white;
+		}
+
+		p {
+			font-size: 1.8em;
+			letter-spacing: 1.5px;
+			font-family: montserratextra_bold;
+
+			&.smaller {
+				font-size: .9em;
+				color: $black;
+				letter-spacing: initial;
+				font-family: montserratregular;
+			}
 		}
 	}
 }
@@ -613,6 +637,20 @@ header {
 	}
 }
 
+.mi-experiencia {
+
+	h2 {
+		font-size: 2em;
+	}
+
+	.image-alumno {
+		height: 369px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 50% 50%;
+	}
+}
+
 .content-btn-show-more {
 	margin-bottom: 25px;
 
@@ -815,6 +853,11 @@ a {
 			margin-right: 0;
 			margin-bottom: 10px;
 		}
+	}
+
+	.mi-experiencia.container {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
 
