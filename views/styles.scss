@@ -814,6 +814,12 @@ a {
 	}
 }
 
+@media (min-width: 1401px) {
+	.container-fluid.mi-experiencia {
+		width: 1400px !important;
+	}
+}
+
 @media (max-width: 1260px) {
 	header .big-banner__desc {
 		width: 72%;
@@ -844,10 +850,10 @@ a {
 	header {
 
 		a.logo-isil {
-			margin-top: 14px;
+			margin-top: 16px;
 
 			img {
-				width: 90px;
+				width: 80px;
 			}
 		}
 
@@ -901,7 +907,7 @@ a {
 		}
 	}
 
-	.mi-experiencia.container {
+	.mi-experiencia.container-fluid {
 		padding-left: 0;
 		padding-right: 0;
 	}
