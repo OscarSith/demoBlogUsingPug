@@ -69,7 +69,9 @@ $('button.navbar-toggle').on('click', function(e) {
 	$('div.full-overload').fadeToggle(400, function(ex) {
 		if ($icon.hasClass('glyphicon-menu-hamburger')) {
 			$icon.removeClass('glyphicon-menu-hamburger').addClass('glyphicon-remove');
+			$('a.icon-search').hide();
 		} else {
+			$('a.icon-search').show();
 			$icon.removeClass('glyphicon-remove').addClass('glyphicon-menu-hamburger');
 		}
 	});
@@ -81,3 +83,32 @@ function prova(e) {
 	$(e.delegateTarget).find('.state-active').removeClass('state-active');
 	$(e.currentTarget).addClass('state-active');
 }
+
+
+$('a.icon-search').on('click', fnShowSearchInput);
+$('#search').on('blur', fnHideSearchInput);
+
+function fnShowSearchInput(e) {
+	e.preventDefault();
+
+	var $form = $(e.currentTarget).closest('form');
+	var $input = $form.find('input');
+
+	if (!$form.hasClass('bar-open')) {
+		$form.addClass('bar-open');
+		$form.animate({width: '205px'}, 'fast', function() {
+			$input.focus();
+		});
+	}
+}
+
+function fnHideSearchInput(e) {
+	var $input = $(e.currentTarget);
+	var $form = $input.closest('form');
+	$form.animate({width: '25px'}, 'fast', function() {
+		$input.val('');
+		$form.removeClass('bar-open');
+	});
+}
+
+

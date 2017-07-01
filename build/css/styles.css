@@ -3542,6 +3542,28 @@ body {
 
 header nav {
   background-color: #000; }
+  header nav form {
+    display: inline-block;
+    position: relative;
+    width: 25px;
+    margin-right: 10px; }
+    header nav form .icon-search {
+      font-size: 2.4em;
+      display: inline-block;
+      margin-top: 14px;
+      margin-left: 7px;
+      position: relative;
+      color: #fff;
+      z-index: 9; }
+    header nav form input {
+      position: absolute;
+      top: 13px;
+      display: none !important;
+      padding-left: 2.5em !important; }
+    header nav form.bar-open .icon-search {
+      color: #000; }
+    header nav form.bar-open input {
+      display: block !important; }
   header nav button.navbar-toggle {
     padding: 5px;
     display: block !important; }
@@ -4022,6 +4044,10 @@ a {
       font-size: 2.5em; } }
 
 @media (max-width: 767px) {
+  header a.logo-isil {
+    margin-top: 14px; }
+    header a.logo-isil img {
+      width: 90px; }
   header .big-banner__desc {
     width: 90%;
     font-size: 2.4em; }

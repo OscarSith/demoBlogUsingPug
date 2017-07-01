@@ -116,6 +116,40 @@ header {
 	nav {
 		background-color: $black;
 
+		form {
+			display: inline-block;
+			position: relative;
+			width: 25px;
+			margin-right: 10px;
+
+			.icon-search {
+				font-size: 2.4em;
+				display: inline-block;
+				margin-top: 14px;
+				margin-left: 7px;
+				position: relative;
+				color: $white;
+				z-index: 9;
+			}
+
+			input {
+				position: absolute;
+				top: 13px;
+				display: none !important;
+				padding-left: 2.5em !important;
+			}
+
+			&.bar-open {
+				.icon-search {
+					color: $black;
+				}
+
+				input {
+					display: block !important;
+				}
+			}
+		}
+
 		button.navbar-toggle {
 			padding: 5px;
 			display: block !important;
@@ -806,9 +840,21 @@ a {
 }
 
 @media (max-width: 767px) {
-	header .big-banner__desc {
-		width: 90%;
-		font-size: 2.4em;
+
+	header {
+
+		a.logo-isil {
+			margin-top: 14px;
+
+			img {
+				width: 90px;
+			}
+		}
+
+		.big-banner__desc {
+			width: 90%;
+			font-size: 2.4em;
+		}
 	}
 
 	.content-btn-show-more {
