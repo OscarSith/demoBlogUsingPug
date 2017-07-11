@@ -18,7 +18,7 @@
 // Colores
 $black: #000;
 $semiBlack: #262834;
-$greyLight: #a7a7a7;
+$greyLight: #a7a7a6;
 $bgGrey: #ededed;
 $white: #fff;
 $linkBlue: #337ab7;
@@ -70,7 +70,7 @@ $turquesa: #0acffe;
 }
 
 body {
-	padding-top: 60px;
+	padding-top: 59px;
 	background-color: $bg;
 	font-family: montserratregular, Arial, Helvetica;
 }
@@ -78,7 +78,7 @@ body {
 .full-overload {
 	position: fixed;
 	z-index: 9999;
-	top: 60px;
+	top: 59px;
 	@include backgroundGradient($black, #485cff);
 	width: 100%;
 	height: 100%;
@@ -187,13 +187,17 @@ header {
 		color: $white;
 
 		&__title {
-			margin-top: 12em;
+			margin-top: 8em;
 		}
 		&__desc {
 			width: 56%;
-			margin: 0 auto 6em;
+			margin: 0 auto 4em;
 			font-family: montserratextra_bold;
 			line-height: 1.2;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 }
@@ -263,6 +267,28 @@ header {
 	}
 
 	.zone {
+		.capa {
+			position: relative;
+
+			.icon-play {
+				position: absolute;
+				display: inline-block;
+				height: 60px;
+				width: 60px;
+				background-color: rgba(255,255,255, .5);
+				z-index: 9;
+				right: 20px;
+				top: 20px;
+				border-radius: 50%;
+
+				i {
+					font-size: 2.1em;
+					color: white;
+					padding: 14px 0 0 17px;
+				}
+			}
+		}
+
 		&-header {
 			@include black_header();
 		}
@@ -379,6 +405,10 @@ header {
 		padding-left: 30px;
 		padding-right: 30px;
 		color: $white;
+
+		&:hover {
+			text-decoration: underline;
+		}
 
 		&.second {
 			background-image: url('../img/bg-nota-abridora-2.jpg');
@@ -532,6 +562,12 @@ header {
 }
 
 /* INTERIOR */
+.interior-banner {
+	background: url(../img/bg-cabecera-interior.jpg) 50% 50%;
+	height: 360px;
+	background-size: cover;
+}
+
 .content-interior {
 	line-height: 1.8em;
 	background-color: $white;
@@ -579,7 +615,6 @@ header {
 
 .interior-home {
 	position: relative;
-	margin-top: 10px;
 
 	.title-header {
 		position: absolute;
@@ -810,7 +845,23 @@ a {
 		position: absolute;
 		top: 0;
 		left: 0;
-		right: 0
+		right: 0;
+
+		&.proyectos {
+			background-image: url('../img/Proyectos.jpg');
+		}
+		&.agenda {
+			background-image: url('../img/Agenda.jpg');
+		}
+		&.docentes {
+			background-image: url('../img/Docentes_DG.jpg');
+		}
+		&.inspiracion {
+			background-image: url('../img/Inspiracion.jpeg');
+		}
+		&.recursos {
+			background-image: url('../img/Recursos.jpg');
+		}
 	}
 }
 
@@ -910,6 +961,10 @@ a {
 	.mi-experiencia.container-fluid {
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	.interior-banner {
+		height: 180px;
 	}
 }
 

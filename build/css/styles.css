@@ -3509,14 +3509,14 @@ tbody.collapse.in {
   src: url("../fonts/montserrat-extrabold-webfont.otf") format("opentype"), url("../fonts/montserrat-extrabold-webfont.woff2") format("woff2"), url("../fonts/montserrat-extrabold-webfont.woff") format("woff"); }
 
 body {
-  padding-top: 60px;
+  padding-top: 59px;
   background-color: #ededed;
   font-family: montserratregular, Arial, Helvetica; }
 
 .full-overload {
   position: fixed;
   z-index: 9999;
-  top: 60px;
+  top: 59px;
   background: #000;
   background: -moz-linear-gradient(top, #000 0%, #485cff 100%);
   background: -webkit-linear-gradient(top, #000 0%, #485cff 100%);
@@ -3590,12 +3590,14 @@ header .big-banner {
   overflow: hidden;
   color: #fff; }
   header .big-banner__title {
-    margin-top: 12em; }
+    margin-top: 8em; }
   header .big-banner__desc {
     width: 56%;
-    margin: 0 auto 6em;
+    margin: 0 auto 4em;
     font-family: montserratextra_bold;
     line-height: 1.2; }
+    header .big-banner__desc:hover {
+      text-decoration: underline; }
 
 .body-content .main {
   margin-top: -100px; }
@@ -3637,6 +3639,23 @@ header .big-banner {
     left: 0; }
   .body-content .students .slick-next {
     right: 0; }
+
+.body-content .zone .capa {
+  position: relative; }
+  .body-content .zone .capa .icon-play {
+    position: absolute;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 9;
+    right: 20px;
+    top: 20px;
+    border-radius: 50%; }
+    .body-content .zone .capa .icon-play i {
+      font-size: 2.1em;
+      color: white;
+      padding: 14px 0 0 17px; }
 
 .body-content .zone-header {
   padding: 10px 15px;
@@ -3726,6 +3745,8 @@ header .big-banner {
     padding-left: 30px;
     padding-right: 30px;
     color: #fff; }
+    .table-block__content:hover {
+      text-decoration: underline; }
     .table-block__content.second {
       background-image: url("../img/bg-nota-abridora-2.jpg"); }
     .table-block__content.no-image {
@@ -3828,6 +3849,11 @@ header .big-banner {
         padding-bottom: 5px; }
 
 /* INTERIOR */
+.interior-banner {
+  background: url(../img/bg-cabecera-interior.jpg) 50% 50%;
+  height: 360px;
+  background-size: cover; }
+
 .content-interior {
   line-height: 1.8em;
   background-color: #fff; }
@@ -3856,8 +3882,7 @@ header .big-banner {
       border: 1px solid #000; }
 
 .interior-home {
-  position: relative;
-  margin-top: 10px; }
+  position: relative; }
   .interior-home .title-header {
     position: absolute;
     top: 60%;
@@ -3934,7 +3959,7 @@ header .big-banner {
   .content-btn-show-more .btn-show-more {
     width: 370px;
     padding: 18px 0;
-    color: #a7a7a7;
+    color: #a7a7a6;
     text-decoration: none;
     background-color: #fff;
     display: inline-block;
@@ -4029,6 +4054,16 @@ a {
     top: 0;
     left: 0;
     right: 0; }
+    .banners .bg-banner.proyectos {
+      background-image: url("../img/Proyectos.jpg"); }
+    .banners .bg-banner.agenda {
+      background-image: url("../img/Agenda.jpg"); }
+    .banners .bg-banner.docentes {
+      background-image: url("../img/Docentes_DG.jpg"); }
+    .banners .bg-banner.inspiracion {
+      background-image: url("../img/Inspiracion.jpeg"); }
+    .banners .bg-banner.recursos {
+      background-image: url("../img/Recursos.jpg"); }
 
 @media (min-width: 1401px) {
   .container-fluid.mi-experiencia {
@@ -4079,7 +4114,9 @@ a {
       margin-bottom: 10px; }
   .mi-experiencia.container-fluid {
     padding-left: 0;
-    padding-right: 0; } }
+    padding-right: 0; }
+  .interior-banner {
+    height: 180px; } }
 
 @media (min-width: 1200px) {
   .col-lg-15 {

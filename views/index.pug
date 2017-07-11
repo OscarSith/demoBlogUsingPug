@@ -12,7 +12,7 @@ block content
 						.arrows.pull-left
 						strong.pull-left
 							| PROYECTOS
-					.pull-right
+					.pull-right.hidden-xs
 						a(href="#") Lo mas visto
 						span &nbsp; &nbsp; &nbsp;
 						a(href="#") Reciente
@@ -104,7 +104,7 @@ block content
 									a.twitter(href='#') twitter
 			.row
 				.col-sm-8.col-sm-offset-2.text-center.content-btn-show-more
-					a.btn-show-more.bg-light VER MÁS
+					a.btn-show-more.bg-light(href="proyectos.html") VER MÁS
 			.row
 				.col-sm-12
 					h3 NOVEDADES
@@ -169,23 +169,29 @@ block content
 						.zone-header
 							span ZONA PLAY
 								i.glyphicon.glyphicon-play
+							span.pull-right
+								| 01 / 10
 
-						.zone-sliders
-							.slider-row(style="background-image: url('img/notas/nota-1.jpg')")
-								.bg-fade
-									h5 INSPIRACION
-									p
-										| Shanti Sparrow. Asi se trabaja la élite del diseño [VIDEO]
-							.slider-row(style="background-image: url('img/notas/nota-2.jpg')")
-								.bg-fade
-									h5 RECURSOS
-									p
-										|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam!
-							.slider-row(style="background-image: url('img/notas/nota-3.jpg')")
-								.bg-fade
-									h5 OTROS
-									p
-										|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa.
+						.capa
+							.icon-play
+								i.glyphicon.glyphicon-play
+
+							.zone-sliders
+								.slider-row(style="background-image: url('img/notas/nota-1.jpg')")
+									.bg-fade
+										h5 INSPIRACION
+										p
+											| Shanti Sparrow. Asi se trabaja la élite del diseño [VIDEO]
+								.slider-row(style="background-image: url('img/notas/nota-2.jpg')")
+									.bg-fade
+										h5 RECURSOS
+										p
+											|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam!
+								.slider-row(style="background-image: url('img/notas/nota-3.jpg')")
+									.bg-fade
+										h5 OTROS
+										p
+											|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa.
 
 			.row
 				.col-md-10.col-md-offset-1
@@ -303,7 +309,7 @@ block content
 						.contents
 							- for (var x = 0; x < 3; x++)
 								.file
-									img.img-responsive.pull-left(src="#")
+									img.img-responsive.pull-left(src="img/notas/nota-5.jpg")
 									h6 INPIRACION
 									p.small
 										| 7 Consejos para diseñar tu guia de estilos
